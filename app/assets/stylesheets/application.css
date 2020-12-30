@@ -13,3 +13,43 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+     margin: 0;
+ }
+
+ .container {
+    background-color: #6670A6;
+    height: 100vh;
+    width: 100vw;
+}
+
+.flex-container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.terminal-container {
+    height: 85vh;
+    width: 85vw;
+}
+
+.terminal-header {
+    text-align: center;
+    background-color: white;
+}
+
+.terminal-body {
+    background-color: #262A33;
+    height: 100%;
+    width: 100%;
+}
+
+.terminal-input {
+    margin-top: 70vh;
+    margin-left: 10px;
+    width: 450px;
+    height: 20px;
+}
