@@ -1,0 +1,41 @@
+Crop,Seed Price,Growth Time,Season,Healing,Sell Prices
+Blue Jazz,30g,7 days,Spring,45 Energy 63 Energy 81 Energy 20 Health 28 Health 36 Health,50g 62g 75g
+Cauliflower,80g,12 days,Spring,75 Energy 105 Energy 135 Energy 33 Health 47 Health 60 Health,175g 218g 262g
+Garlic,40g,4 days,Spring,20 Energy 28 Energy 36 Energy 9 Health 12 Health 16 Health,60g 75g 90g
+Kale,70g,6 days,Spring,50 Energy 70 Energy 90 Energy 22 Health 31 Health 40 Health,110g 137g 165g
+Parsnip,20g,4 days,Spring,25 Energy 35 Energy 45 Energy 11 Health 15 Health 20 Health,35g 43g 52g
+Potato,50g,6 days,Spring,25 Energy 35 Energy 45 Energy 11 Health 15 Health 20 Health,80g 100g 120g
+Rhubarb,Oasis: 100g,13 days,Spring,Inedible,220g 275g 330g
+Tulip,20g,6 days,Spring,45 Energy 63 Energy 81 Energy 20 Health 28 Health 36 Health,30g 37g 45g
+Unmilled Rice,40g,8 days (6 when irrigated),Spring,3 Energy 4 Energy 5 Energy 1 Health 1 Health 2 Health,30g 37g 45g
+Coffee Bean,"Traveling Cart: 2,500g",10 days,Spring,Inedible,15g 18g 22g
+Green Bean,60g,10 days,Spring,25 Energy 35 Energy 45 Energy 11 Health 15 Health 20 Health,40g 50g 60g
+Strawberry,Egg Festival: 100g,8 days,Spring,50 Energy 70 Energy 90 Energy 22 Health 31 Health 40 Health,120g 150g 180g
+Melon,80g,12 days,Summer,113 Energy 158 Energy 203 Energy 50 Health 71 Health 91 Health,250g 312g 375g
+Poppy,100g,7 days,Summer,45 Energy 63 Energy 81 Energy 20 Health 28 Health 36 Health,140g 175g 210g
+Radish,40g,6 days,Summer,45 Energy 63 Energy 81 Energy 20 Health 28 Health 36 Health,90g 112g 135g
+Red Cabbage,100g,9 days,Summer,75 Energy 105 Energy 135 Energy 33 Health 47 Health 60 Health,260g 325g 390g
+Starfruit,Oasis: 400g,13 days,Summer,125 Energy 175 Energy 225 Energy 56 Health 78 Health 101 Health,"750g 937g 1,125g"
+Summer Spangle,50g,8 days,Summer,45 Energy 63 Energy 81 Energy 20 Health 28 Health 36 Health,90g 112g 135g
+Sunflower,200g,8 days,Summer,45 Energy 63 Energy 81 Energy 20 Health 28 Health 36 Health,80g 100g 120g
+Wheat,10g,4 days,Summer,Inedible,25g 31g 37g
+Blueberry,80g,13 days,Summer,25 Energy 35 Energy 45 Energy 11 Health 15 Health 20 Health,50g 62g 75g
+Coffee Bean,"Traveling Cart: 2,500g",10 days,Summer,Inedible,15g 18g 22g
+Corn,150g,14 days,Summer,25 Energy 35 Energy 45 Energy 11 Health 15 Health 20 Health,50g 62g 75g
+Hops,60g,11 days,Summer,45 Energy 63 Energy 81 Energy 20 Health 28 Health 36 Health,25g 31g 37g
+Hot Pepper,40g,5 days,Summer,13 Energy 18 Energy 23 Energy 5 Health 8 Health 10 Health,40g 50g 60g
+Tomato,50g,11 days,Summer,20 Energy 28 Energy 36 Energy 9 Health 12 Health 16 Health,60g 75g 90g
+Amaranth,70g,7 days,Fall,50 Energy 70 Energy 90 Energy 22 Health 31 Health 40 Health,150g 187g 225g
+Artichoke,30g,8 days,Fall,30 Energy 42 Energy 54 Energy 13 Health 18 Health 24 Health,160g 200g 240g
+Beet,Oasis: 20g,6 days,Fall,30 Energy 42 Energy 54 Energy 13 Health 18 Health 24 Health,100g 125g 150g
+Bok Choy,50g,4 days,Fall,25 Energy 35 Energy 45 Energy 11 Health 15 Health 20 Health,80g 100g 120g
+Fairy Rose,200g,12 days,Fall,45 Energy 63 Energy 81 Energy 20 Health 28 Health 36 Health,290g 362g 435g
+Pumpkin,100g,13 days,Fall,Inedible,320g 400g 480g
+Sunflower,200g,8 days,Fall,45 Energy 63 Energy 81 Energy 20 Health 28 Health 36 Health,80g 100g 120g
+Sweet Gem Berry,"Traveling Cart: 1,000g",24 days,Fall,Inedible,"3,000g 3,750g 4,500g"
+Wheat,10g,4 days,Fall,Inedible,25g 31g 37g
+Yam,60g,10 days,Fall,45 Energy 63 Energy 81 Energy 20 Health 28 Health 36 Health,160g 200g 240g
+Corn,150g,14 days,Fall,25 Energy 35 Energy 45 Energy 11 Health 15 Health 20 Health,50g 62g 75g
+Cranberries,240g,7 days,Fall,38 Energy 53 Energy 68 Energy 17 Health 23 Health 30 Health,75g 93g 112g
+Eggplant,20g,5 days,Fall,20 Energy 28 Energy 36 Energy 9 Health 12 Health 16 Health,60g 75g 90g
+Grape,60g,7 days (Summer Seeds)10 days (Grape Starter),Fall,38 Energy 53 Energy 68 Energy 98 Energy 17 Health 23 Health 30 Health 44 Health,80g 100g 120g 160g

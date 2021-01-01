@@ -7,18 +7,47 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'csv'
 
-character_info = File.read(Rails.root.join('lib', 'seeds', 'CharacterModelInfo.csv'))
-character = CSV.parse(character_info, :headers => true, :encoding => 'ISO-8859-1')
-character.each do |row|
-    c = Villager.new
-    c.name = row['Villager']
-    c.gifts = row['Gifts']
-    c.birthday = row['Birthday']
-    c.address = row['Address']
-    c.save
-    puts "#{c.name}, #{c.gifts} saved"
-    # puts row.to_hash
-end
+villager_info = File.read(Rails.root.join('lib', 'seeds', 'VillagerData.csv'))
+villager = CSV.parse(villager_info, :headers => true, :encoding => 'ISO-8859-1')
 
+villager.each do |row|
+    v = Villager.new
+    v.villager = row['Villager']
+    v.birthday = row['Birthday']
+    v.loves = row['Loves']
+    v.likes = row['Likes']
+    v.neutral = row['Neutral']
+    v.dislikes = row['Dislikes']
+    v.hates = row['Hates']
+    v.save
+    puts "Added #{v.villager} with season #{v.loves}"
+end
 puts "There are now #{Villager.count} rows in the villagers table"
-  
+
+# Our convention is Spring (0), Summer (1), Fall (2), Winter (3)
+seasons = ['Spring', 'Summer', 'Fall', 'Winter']
+seasons.each do |season| 
+    s = Season.new
+    s.season = season
+    s.save
+end
+puts "There are now #{Season.count} rows in the seasons table"
+
+crop_info = File.read(Rails.root.join('lib', 'seeds', 'CropData.csv'))
+crop = CSV.parse(crop_info, :headers => true, :encoding => 'ISO-8859-1')
+
+crop.each do |row|
+    season = Season.where(season: row['Season']).first.id
+    puts season
+    c = Crop.new
+    c.crop = row['Crop']
+    c.szn = row['Season']
+    c.buy = row['Seed Price']
+    c.sell = row['Sell Prices']
+    c.growth = row['Growth Time']
+    c.healing = row['Healing']
+    c.season_id = season
+    c.save
+    puts "Added #{c.crop} with season #{c.szn}"
+end
+puts "There are now #{Crop.count} rows in the crops table"
