@@ -1,55 +1,198 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 
  body {
-     margin: 0;
- }
+    margin: 0;
+}
 
- .container {
+.container-flex {
     background-color: #6670A6;
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
-}
-
-.flex-container {
-    padding: 20px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
-.terminal-container {
-    height: 85vh;
-    width: 85vw;
+.container-flex-1 {
+    justify-content: center;
+    align-items: center;
+}
+
+.container-flex:not(.container-flex-1) {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
 }
 
 .terminal-header {
+    font-family: 'IBM Plex Mono', monospace;
     text-align: center;
     background-color: white;
+    color: #565B6A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -moz-user-select: none; 
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.terminal-header-1, .terminal-header-2 {
+    font-size: 18px;
+    padding: 0 13px;
+    height: 45px;
+}
+
+.terminal-header:not(.terminal-header-1):not(.terminal-header-2) {
+    font-size: 16px;
+    padding: 0 10px;
+    height: 34px;
+}
+
+.terminal-margin-bottom {
+    margin-bottom: 21px;
+}
+
+.terminal-button-large {
+    background-color: #C4C4C4;
+    color: #414550;
+    border-radius: 3px;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.terminal-button-small {
+    background-color: #C4C4C4;
+    color: #414550;
+    border-radius: 3px;
+    height: 18px;
+    width: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.terminal-button-small:hover, .terminal-button-large:hover {
+    background-color: #AAAAAA;
+}
+
+.terminal-button-small:active, .terminal-button-large:active {
+    background-color: #b6b6b6;
 }
 
 .terminal-body {
+    font-family: 'IBM Plex Mono', monospace;
     background-color: #262A33;
-    height: 100%;
-    width: 100%;
+    color: #C4C4C4;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.terminal-body-1 > *, .terminal-body-2 > * {
+    padding: 14px 14px 0 14px;
+}
+
+.terminal-body:not(.terminal-body-1):not(.terminal-body-2) > * {
+    padding: 10px 10px 0 10px;
+}
+
+.terminal-body-1 {
+    height: 76vh;
+    width: 96vw;
+    font-size: 15px;
+}
+
+.terminal-body-2 {
+    height: 76vh;
+    width: 47vw;
+    font-size: 15px;
+}
+
+.terminal-body-3, .terminal-body-4 {
+    height: 33vh;
+    width: 47vw;
+    font-size: 14px;
+}
+
+.terminal-body-5, .terminal-body-6 {
+    height: 33vh;
+    width: 30.7vw;
+    font-size: 13px;
+}
+
+.terminal-body-7, .terminal-body-8 {
+    height: 33vh;
+    width: 22.5vw;
+    min-width: calc(100% - 30px);
+    font-size: 13px;
+}
+
+.entry-start {
+    margin-top: 15px;
+}
+
+.terminal-input-container {
+    background-color: #262A33;
 }
 
 .terminal-input {
-    margin-top: 70vh;
-    margin-left: 10px;
-    width: 450px;
-    height: 20px;
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: #464C58;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.terminal-input-large {
+    width: calc(100% - 38px);
+    margin: 14px;
+    padding: 5px;
+    height: 23px;
+    font-size: 14.5px;
+}
+
+.terminal-input-small {
+    width: calc(100% - 25px);
+    margin: 10px;
+    padding: 4px;
+    height: 17px;
+    font-size: 13px;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+/* Set input placeholder color for various browsers */
+::placeholder {
+    color: #A6A9B1;
+    opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #A6A9B1;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: #A6A9B1;
+}
+
+/* Set scrollbar theming for Chrome */
+::-webkit-scrollbar-track {
+	background-color: #21232b;
+}
+
+::-webkit-scrollbar {
+	width: 16px;
+	background-color: #21232b;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #78797e;
+	border: 1px solid #21232b;
 }
