@@ -10,7 +10,9 @@ class App extends React.Component {
   
     this.state = {
       numTerminals: 1,
-      villagers: []
+      villagers: [],
+      seasons: [],
+      crops: []
     };
   }
 
@@ -23,13 +25,29 @@ class App extends React.Component {
     this.setFocus();
 
     $.getJSON('/villager')
-        .then(response => {
-          let villagerNames = [];
-          for(let i = 0; i<response.data.length; i++) {
-            villagerNames.push(response.data[i].name.toLowerCase())
-          }
-          this.setState({ villagers: villagerNames })
-        })
+      .then(response => {
+        let villagerNames = [];
+        for(let i = 0; i<response.data.length; i++) {
+          villagerNames.push(response.data[i].name.toLowerCase())
+        }
+        this.setState({ villagers: villagerNames })
+      })
+    $.getJSON('/season')
+      .then(response => {
+        let seasonNames = [];
+        for(let i = 0; i<response.data.length; i++) {
+          seasonNames.push(response.data[i].name.toLowerCase())
+        }
+        this.setState({ seasons: seasonNames })
+      })
+    $.getJSON('/crop')
+      .then(response => {
+        let cropNames = [];
+        for(let i = 0; i<response.data.length; i++) {
+          cropNames.push(response.data[i].name.toLowerCase())
+        }
+        this.setState({ crops: cropNames })
+      })
   }
 
   addTerminals() {
@@ -63,6 +81,8 @@ class App extends React.Component {
           removeTerms={this.removeTerminals} 
           marginBottom={marginBottom}
           villagers={this.state.villagers}
+          seasons={this.state.seasons}
+          crops={this.state.crops}
         >
         </Terminal>
       );
