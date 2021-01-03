@@ -1,0 +1,18 @@
+Crop Model: ["Name",  "Season", "Buy", "Sell", "Growth", "Healing"]
+Season Model: ["Name"]
+Fish Model: [Name, Price, Location, Time, Season, Weather, Difficulty & Behvaior, Used in]
+Forage Model: [Name, Season, Where, Sell, Uses]
+
+
+rails destroy model Villager
+rails destroy model Season
+rails destroy model Crop
+rails destroy model Forage
+rails destroy model Fish
+
+
+rails generate model Villager name:string birthday:string loves:string likes:string neutral:string dislikes:string hates:string
+rails generate model Season name:string
+rails generate model Crop name:string season_name:string buy:string sell:string growth:string healing:string season:references
+rails generate model Forage name:string season_name:string location:string sell:string uses:string season:references
+rails generate model Fish name:string season_name:string sell:string location:string time:string weather:string difficulty:string uses:string season:references
