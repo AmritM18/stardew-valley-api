@@ -1,8 +1,11 @@
 json.data do
   json.array!(@data) do |item|
-    json.name item.name
-    json.gifts item.gifts
+    json.name item.villager
     json.birthday item.birthday
-    json.address item.address
+    json.loves item.loves
+    json.likes item.likes
+    json.neutral item.neutral
+    json.dislikes item.dislikes
+    json.hates item.hates
   end
 end

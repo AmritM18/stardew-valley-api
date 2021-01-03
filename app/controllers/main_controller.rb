@@ -1,11 +1,19 @@
 class MainController < ApplicationController
 
-  before_action :force_json, only: :villager
+  before_action :force_json
 
   def index; end
 
   def villager
-    @data = Villager.ransack(name_eq: params[:q]).result(distinct: true)
+    @data = Villager.ransack(villager_eq: params[:q]).result(distinct: true)
+  end
+
+  def season
+    @data = Season.ransack(season_eq: params[:q]).result(distinct: true)
+  end
+
+  def crop
+    @data = Crop.ransack(crop_eq: params[:q]).result(distinct: true)
   end
 
   private
