@@ -1,0 +1,61 @@
+﻿Fish,Season,Sell,Location,Time,Weather,Difficulty,Uses
+Anchovy,Spring,"30g, 37g, 45g, 60g",Ocean,Anytime,Any,30 dart,
+Smallmouth Bass,Spring,"50g, 62g, 75g, 100g","River (Town), Forest Pond",Anytime,Any,28 mixed,
+Catfish,Spring,"200g, 250g, 300g, 400g","River (Town+Forest), Secret Woods Pond, Witch's Swamp",6am – 12am,Rain,75 mixed,"River Fish Bundle, Willy (loved gift)"
+Sunfish,Spring,"30g, 37g, 45g, 60g",River (Town+Forest),6am – 7pm,"Sun, Wind",30 mixed,"River Fish Bundle, Baked Fish"
+Herring,Spring,"30g, 37g, 45g, 60g",Ocean,Anytime,Any,25 dart,
+Eel,Spring,"85g, 106g, 127g, 170g",Ocean,4pm – 2am,Rain,70 smooth,"Night Fishing Bundle, Fried Eel, Spicy Eel"
+Sardine,Spring,"40g, 50g, 60g, 80g",Ocean,6am – 7pm,Any,30 dart,"Ocean Fish Bundle, Dish o' The Sea"
+Shad,Spring,"60g, 75g, 90g, 120g",River (Town+Forest),9am – 2am,Rain,45 smooth,River Fish Bundle
+Flounder,Spring,"100g, 125g, 150g, 200g","Ocean, Ginger Island oceans",6am – 8pm,Any,50 sinker,Seafoam Pudding
+Halibut,Spring,"80g, 100g, 120g, 160g",Ocean,"6am – 11am, 7pm – 2am",Any,50 sinker,
+Legend,Spring,"5,000g, 6,250g, 7,500g, 10,000g",The Mountain Lake near the log. Requires level 10 fishing.,Any,Rain,110 mixed,
+Pufferfish,Summer,"200g, 250g, 300g, 400g",Ocean,12pm – 4pm,Sun,80 floater,"Specialty Fish Bundle, Abigail (loved gift), ""Aquatic Research"" Quest"
+Tuna,Summer,"100g, 125g, 150g, 200g",Ocean,6am – 7pm,Any,70 smooth,"Ocean Fish Bundle, Fish Taco"
+Rainbow Trout,Summer,"65g, 81g, 97g, 130g","River (Town+Forest), Mountain Lake",6am – 7pm,Sun,45 mixed,Trout Soup
+Catfish,Summer,"200g, 250g, 300g, 400g","River (Town+Forest), Secret Woods Pond, Witch's Swamp",6am – 12am,Rain,75 mixed,"River Fish Bundle, Willy (loved gift)"
+Pike,Summer,"100g, 125g, 150g, 200g","River (Town+Forest), Forest Pond",Anytime,Any,60 dart,
+Sunfish,Summer,"30g, 37g, 45g, 60g",River (Town+Forest),6am – 7pm,"Sun, Wind",30 mixed,"River Fish Bundle, Baked Fish"
+Red Mullet,Summer,"75g, 93g, 112g, 150g",Ocean,6am – 7pm,Any,55 smooth,
+Octopus,Summer,"150g, 187g, 225g, 300g",Ocean,6am – 1pm,Any,95 sinker,Willy (loved gift)
+Red Snapper,Summer,"50g, 62g, 75g, 100g",Ocean,6am – 7pm,Rain,40 mixed,Ocean Fish Bundle
+Super Cucumber,Summer,"250g, 312g, 375g, 500g","Ocean, Ginger Island oceans",6pm – 2am,Any,80 sinker,Wizard (loved gift)
+Sturgeon,Summer,"200g, 250g, 300g, 400g",Mountain Lake,6am – 7pm,Any,78 mixed,"Lake Fish Bundle, Willy (loved gift)"
+Tilapia,Summer,"75g, 93g, 112g, 150g","Ocean, Ginger Island rivers",6am – 2pm,Any,50 mixed,Ocean Fish Bundle
+Dorado,Summer,"100g, 125g, 150g, 200g",River (Forest),6am – 7pm,Any,78 mixed,
+Flounder,Summer,"100g, 125g, 150g, 200g","Ocean, Ginger Island oceans",6am – 8pm,Any,50 sinker,Seafoam Pudding
+Shad,Summer,"60g, 75g, 90g, 120g",River (Town+Forest),9am – 2am,Rain,45 smooth,River Fish Bundle
+Halibut,Summer,"80g, 100g, 120g, 160g",Ocean,"6am – 11am, 7pm – 2am",Any,50 sinker,
+Crimsonfish,Summer,"1,500g, 1,875g, 2,250g, 3,000g",East Pier on The Beach. Requires level 5 fishing.,Any,Any,95 mixed,
+Anchovy,Fall,"30g, 37g, 45g, 60g",Ocean,Anytime,Any,30 dart,
+Sardine,Fall,"40g, 50g, 60g, 80g",Ocean,6am – 7pm,Any,30 dart,"Ocean Fish Bundle, Dish o' The Sea"
+Smallmouth Bass,Fall,"50g, 62g, 75g, 100g","River (Town), Forest Pond",Anytime,Any,28 mixed,
+Salmon,Fall,"75g, 93g, 112g, 150g",River (Town+Forest),6am – 7pm,Any,50 mixed,Salmon Dinner
+Walleye,Fall,"105g, 131g, 157g, 210g","River (Town+Forest), Forest Pond, Mountain Lake",12pm – 2am,Rain,45 smooth,Night Fishing Bundle
+Catfish,Fall,"200g, 250g, 300g, 400g","River (Town+Forest), Secret Woods Pond, Witch's Swamp",6am – 12am,Rain,75 mixed,"River Fish Bundle, Willy (loved gift)"
+Eel,Fall,"85g, 106g, 127g, 170g",Ocean,4pm – 2am,Rain,70 smooth,"Night Fishing Bundle, Fried Eel, Spicy Eel"
+Red Snapper,Fall,"50g, 62g, 75g, 100g",Ocean,6am – 7pm,Rain,40 mixed,Ocean Fish Bundle
+Sea Cucumber,Fall,"75g, 93g, 112g, 150g",Ocean,6am – 7pm,Any,40 sinker,"Lucky Lunch, Willy (loved gift)"
+Super Cucumber,Fall,"250g, 312g, 375g, 500g","Ocean, Ginger Island oceans",6pm – 2am,Any,80 sinker,Wizard (loved gift)
+Tiger Trout,Fall,"150g, 187g, 225g, 300g",River (Town+Forest),6am – 7pm,Any,60 dart,River Fish Bundle
+Tilapia,Fall,"75g, 93g, 112g, 150g","Ocean, Ginger Island rivers",6am – 2pm,Any,50 mixed,Ocean Fish Bundle
+Albacore,Fall,"75g, 93g, 112g, 150g",Ocean,"6am – 11am, 6pm – 2am",Any,60 mixed,"""Fish Stew"" Quest"
+Midnight Carp,Fall,"150g, 187g, 225g, 300g","Mountain Lake, Cindersap Forest pond, Ginger Island pond and river",10pm – 2am,Any,55 mixed,Seafoam Pudding
+Shad,Fall,"60g, 75g, 90g, 120g",River (Town+Forest),9am – 2am,Rain,45 smooth,River Fish Bundle
+Angler,Fall,"900g, 1,125g, 1,350g, 1,800g","North of Joja, Mart on the wooden plank bridge. Requires level 3 fishing.",Any,Any,85 smooth,
+Tuna,Winter,"100g, 125g, 150g, 200g",Ocean,6am – 7pm,Any,70 smooth,"Ocean Fish Bundle, Fish Taco"
+Sardine,Winter,"40g, 50g, 60g, 80g",Ocean,6am – 7pm,Any,30 dart,"Ocean Fish Bundle, Dish o' The Sea"
+Perch,Winter,"55g, 68g, 82g, 110g","River (Town+Forest), Forest Pond, Mountain Lake",Anytime,Any,35 dart,
+Pike,Winter,"100g, 125g, 150g, 200g","River (Town+Forest), Forest Pond",Anytime,Any,60 dart,
+Red Mullet,Winter,"75g, 93g, 112g, 150g",Ocean,6am – 7pm,Any,55 smooth,
+Herring,Winter,"30g, 37g, 45g, 60g",Ocean,Anytime,Any,25 dart,
+Squid,Winter,"80g, 100g, 120g, 160g",Ocean,6pm – 2am,Any,75 sinker,"Fried Calamari, ""Catch a Squid"" Quest"
+Sea Cucumber,Winter,"75g, 93g, 112g, 150g",Ocean,6am – 7pm,Any,40 sinker,"Lucky Lunch, Willy (loved gift)"
+Sturgeon,Winter,"200g, 250g, 300g, 400g",Mountain Lake,6am – 7pm,Any,78 mixed,"Lake Fish Bundle, Willy (loved gift)"
+Tiger Trout,Winter,"150g, 187g, 225g, 300g",River (Town+Forest),6am – 7pm,Any,60 dart,River Fish Bundle
+Albacore,Winter,"75g, 93g, 112g, 150g",Ocean,"6am – 11am, 6pm – 2am",Any,60 mixed,"""Fish Stew"" Quest"
+Lingcod,Winter,"120g, 150g, 180g, 240g","River (Town+Forest), Mountain Lake",Anytime,Any,85 mixed,"""Catch a Lingcod"" Quest"
+Red Snapper,Winter,"50g, 62g, 75g, 100g",Ocean,6am – 7pm,Rain,40 mixed,Ocean Fish Bundle
+Halibut,Winter,"80g, 100g, 120g, 160g",Ocean,"6am – 11am, 7pm – 2am",Any,50 sinker,
+Midnight Carp,Winter,"150g, 187g, 225g, 300g","Mountain Lake, Cindersap Forest pond, Ginger Island pond and river",10pm – 2am,Any,55 mixed,Seafoam Pudding
+Glacierfish,Winter,"1,000g, 1,250g, 1,500g, 2,000g",South end of Arrowhead Island in Cindersap Forest. Requires level 6 fishing.,Any,Any,100 mixed,

@@ -12,7 +12,7 @@ villager = CSV.parse(villager_info, :headers => true, :encoding => 'ISO-8859-1')
 
 villager.each do |row|
     v = Villager.new
-    v.villager = row['Villager']
+    v.name = row['Villager']
     v.birthday = row['Birthday']
     v.loves = row['Loves']
     v.likes = row['Likes']
@@ -20,7 +20,7 @@ villager.each do |row|
     v.dislikes = row['Dislikes']
     v.hates = row['Hates']
     v.save
-    puts "Added #{v.villager} with season #{v.loves}"
+    puts "Added #{v.name} with season #{v.loves}"
 end
 puts "There are now #{Villager.count} rows in the villagers table"
 
@@ -28,7 +28,7 @@ puts "There are now #{Villager.count} rows in the villagers table"
 seasons = ['Spring', 'Summer', 'Fall', 'Winter']
 seasons.each do |season| 
     s = Season.new
-    s.season = season
+    s.name = season
     s.save
 end
 puts "There are now #{Season.count} rows in the seasons table"
@@ -37,17 +37,53 @@ crop_info = File.read(Rails.root.join('lib', 'seeds', 'CropData.csv'))
 crop = CSV.parse(crop_info, :headers => true, :encoding => 'ISO-8859-1')
 
 crop.each do |row|
-    season = Season.where(season: row['Season']).first.id
-    puts season
+    season = Season.where(name: row['Season']).first.id
     c = Crop.new
-    c.crop = row['Crop']
-    c.szn = row['Season']
+    c.name = row['Crop']
+    c.season_name = row['Season']
     c.buy = row['Seed Price']
     c.sell = row['Sell Prices']
     c.growth = row['Growth Time']
     c.healing = row['Healing']
     c.season_id = season
     c.save
-    puts "Added #{c.crop} with season #{c.szn}"
+    puts "Added #{c.name} with season #{c.season_name}"
 end
 puts "There are now #{Crop.count} rows in the crops table"
+
+forage_info = File.read(Rails.root.join('lib', 'seeds', 'ForageData.csv'))
+forage = CSV.parse(forage_info, :headers => true, :encoding => 'ISO-8859-1')
+
+forage.each do |row|
+    season = Season.where(name: row['Season']).first.id
+    f = Forage.new
+    f.name = row['Forage']
+    f.season_name = row['Season']
+    f.location = row['Location']
+    f.sell = row['Sell']
+    f.uses = row['Uses']
+    f.season_id = season
+    f.save
+    puts "Added #{f.name} with season #{f.season_name}"
+end
+puts "There are now #{Forage.count} rows in the forages table"
+
+fish_info = File.read(Rails.root.join('lib', 'seeds', 'FishData.csv'))
+fish = CSV.parse(fish_info, :headers => true, :encoding => 'ISO-8859-1')
+
+fish.each do |row|
+    season = Season.where(name: row['Season']).first.id
+    f = Fish.new
+    f.name = row['Fish']
+    f.season_name = row['Season']
+    f.location = row['Sell']
+    f.sell = row['Location']
+    f.time = row['Time']
+    f.weather = row['Weather']
+    f.difficulty = row['Difficulty']
+    f.uses = row['Uses']
+    f.season_id = season
+    f.save
+    puts "Added #{f.name} with season #{f.season_name}"
+end
+puts "There are now #{Fish.count} rows in the fish table"

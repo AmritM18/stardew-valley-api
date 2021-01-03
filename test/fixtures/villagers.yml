@@ -1,7 +1,7 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  villager: MyString
+  name: MyString
   birthday: MyString
   loves: MyString
   likes: MyString
@@ -10,7 +10,7 @@ one:
   hates: MyString
 
 two:
-  villager: MyString
+  name: MyString
   birthday: MyString
   loves: MyString
   likes: MyString

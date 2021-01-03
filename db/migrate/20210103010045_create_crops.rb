@@ -1,8 +1,8 @@
 class CreateCrops < ActiveRecord::Migration[6.0]
   def change
     create_table :crops do |t|
-      t.string :crop
-      t.string :szn
+      t.string :name
+      t.string :season_name
       t.string :buy
       t.string :sell
       t.string :growth

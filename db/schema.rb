@@ -10,14 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_01_214132) do
+ActiveRecord::Schema.define(version: 2021_01_03_010101) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "crops", force: :cascade do |t|
-    t.string "crop"
-    t.string "szn"
+    t.string "name"
+    t.string "season_name"
     t.string "buy"
     t.string "sell"
     t.string "growth"
@@ -28,14 +28,41 @@ ActiveRecord::Schema.define(version: 2021_01_01_214132) do
     t.index ["season_id"], name: "index_crops_on_season_id"
   end
 
+  create_table "fish", force: :cascade do |t|
+    t.string "name"
+    t.string "season_name"
+    t.string "sell"
+    t.string "location"
+    t.string "time"
+    t.string "weather"
+    t.string "difficulty"
+    t.string "uses"
+    t.bigint "season_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["season_id"], name: "index_fish_on_season_id"
+  end
+
+  create_table "forages", force: :cascade do |t|
+    t.string "name"
+    t.string "season_name"
+    t.string "location"
+    t.string "sell"
+    t.string "uses"
+    t.bigint "season_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["season_id"], name: "index_forages_on_season_id"
+  end
+
   create_table "seasons", force: :cascade do |t|
-    t.string "season"
+    t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "villagers", force: :cascade do |t|
-    t.string "villager"
+    t.string "name"
     t.string "birthday"
     t.string "loves"
     t.string "likes"
@@ -47,4 +74,6 @@ ActiveRecord::Schema.define(version: 2021_01_01_214132) do
   end
 
   add_foreign_key "crops", "seasons"
+  add_foreign_key "fish", "seasons"
+  add_foreign_key "forages", "seasons"
 end

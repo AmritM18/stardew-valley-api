@@ -3,17 +3,21 @@
 one:
   name: MyString
   season_name: MyString
-  buy: MyString
   sell: MyString
-  growth: MyString
-  healing: MyString
+  location: MyString
+  time: MyString
+  weather: MyString
+  difficulty: MyString
+  uses: MyString
   season: one
 
 two:
   name: MyString
   season_name: MyString
-  buy: MyString
   sell: MyString
-  growth: MyString
-  healing: MyString
+  location: MyString
+  time: MyString
+  weather: MyString
+  difficulty: MyString
+  uses: MyString
   season: two
