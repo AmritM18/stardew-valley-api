@@ -1,6 +1,6 @@
 json.data do
   json.array!(@data) do |item|
-    json.name item.villager
+    json.name item.name
     json.birthday item.birthday
     json.loves item.loves
     json.likes item.likes

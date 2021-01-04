@@ -43,7 +43,7 @@
 }
 
 .terminal-header:not(.terminal-header-1):not(.terminal-header-2) {
-    font-size: 16px;
+    font-size: 15.5px;
     padding: 0 10px;
     height: 34px;
 }
@@ -104,13 +104,13 @@
 .terminal-body-1 {
     height: 76vh;
     width: 96vw;
-    font-size: 15px;
+    font-size: 14.5px;
 }
 
 .terminal-body-2 {
     height: 76vh;
     width: 47vw;
-    font-size: 15px;
+    font-size: 14.5px;
 }
 
 .terminal-body-3, .terminal-body-4 {

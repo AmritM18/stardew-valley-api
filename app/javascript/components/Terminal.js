@@ -1,5 +1,8 @@
 import React from "react"
-import PropTypes from "prop-types"
+
+import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
+import { getItems } from '../redux/actions';
 
 class Terminal extends React.Component {
   constructor(props) {
@@ -21,20 +24,23 @@ class Terminal extends React.Component {
       // Remove extra space at beginning and end
       if(command[0] === "") command.splice(0, 1);
       if(command[command.length-1] === "") command.splice(command.length-1, 1);
+      for(let i = 0; i<command.length; i++) {
+        command[i] = this.capitalize(command[i]);
+      }
 
       // Check for special commands
       if(command.length === 1) {
-        if(command[0].toLowerCase() === "help") {
+        if(command[0] === "Help") {
           window.open("/help");
           e.target.value = "";
           return;
         }
-        else if(command[0].toLowerCase() === "clear") {
+        else if(command[0] === "Clear") {
           this.setState({ results: [] })
           e.target.value = "";
           return;
         }
-        else if(command[0].toLowerCase() === "remove") {
+        else if(command[0] === "Remove") {
           let newResults = this.state.results;
           let popped = newResults.pop();
           while(popped.charAt(0) !== '$') {
@@ -47,69 +53,49 @@ class Terminal extends React.Component {
       }
 
       // Format command to be displayed on terminal
-      let input = "";
+      let allWords = "";
       command.forEach((word) => {
-        input += this.capitalize(word) + " ";
+        allWords += word + " ";
       })
+      allWords = allWords.slice(0, -1);
       let terminal = this.state.results;
-      terminal.push("$ "+input);
+      terminal.push("$ " + allWords);
 
-      // Category is the type of item being searched for
       let category = "";
-      // In case the name of the item is 2 or 3 words long
-      let twoWords = "";
-      let threeWords = "";
-      if(command.length > 1) twoWords = this.capitalize(command[0]) + " " + this.capitalize(command[1]);
-      if(command.length > 2) threeWords = this.capitalize(command[0]) + " " + this.capitalize(command[1]) + " " + this.capitalize(command[2]);
-
-      switch(true) {
-        case this.props.villagers.includes(command[0].toLowerCase()):
-          category = "villager";
-          command[0] = this.capitalize(command[0]);
-          break;
-        case this.props.seasons.includes(command[0].toLowerCase()):
-          category = "season";
-          command[0] = this.capitalize(command[0]);
-          break;
-        case this.props.crops.includes(threeWords.toLowerCase()):
-          category = "crop";
-          command[0] = threeWords.replace(" ", "+");
-          command.splice(2, 1);
-          command.splice(1, 1);
-          break;
-        case this.props.crops.includes(twoWords.toLowerCase()):
-          category = "crop";
-          command[0] = twoWords.replace(" ", "+");
-          command.splice(1, 1);
-          break;
-        case this.props.crops.includes(command[0].toLowerCase()):
-          category = "crop";
-          command[0] = this.capitalize(command[0]);
-          break;
+      let field = "";
+      if(this.props.map.has(allWords)) {
+        category = this.props.map.get(allWords);
+        command[0] = allWords;
+      }
+      else if(command.length > 1) {
+        let removeLastWord = allWords.substring(0, allWords.lastIndexOf(" "));
+        if(this.props.map.has(removeLastWord)) category = this.props.map.get(removeLastWord);
+        command[0] = removeLastWord;
+        field = command[command.length-1].toLowerCase();
       }
 
-      if(category === "" || command.length > 2) {
+      if(category === "") {
         terminal.push("Invalid Command");
         this.setState({ results: terminal });
       }
       else {
-        let url = "/" + category + "?q=" + command[0];
+        let url = "/" + category + "?q=" + command[0].replace(" ", "+");
         console.log(url)
         $.getJSON(url)
           .then(response => {
             const keys = Object.keys(response.data[0]);
             const values = Object.values(response.data[0]);
 
-            if(command.length === 1) {
+            if(field === "") {
               for(let i = 0; i<keys.length; i++) {
                 if(keys[i] !== "name") {
-                  if(category === "season" && Array.isArray(values[i])) {
+                  //if(category === "season" && Array.isArray(values[i])) {
+                  if(Array.isArray(values[i])) {
                     if(values[i].length !== 0) {
                       let string = this.capitalize(keys[i]) + ": "
                       for(let j = 0; j<values[i].length; j++) {
-                        // TO DO: CHANGE .CROP TO .NAME ONCE MODELS ARE CHANGED
-                        if(j === values[i].length-1) string += values[i][j].crop;
-                        else string += values[i][j].crop + ", ";
+                        if(j === values[i].length-1) string += values[i][j].name;
+                        else string += values[i][j].name + ", ";
                       }
                       terminal.push(string);
                     }
@@ -119,13 +105,13 @@ class Terminal extends React.Component {
                 }
               }
             }
-            else if(command.length === 2) {
-              const field = command[1].toLowerCase();
+            else {
+              console.log(field);
               if(keys.includes(field) && field !== "name") {
                 terminal.push(this.capitalize(field) + ": " + response.data[0][field]);
               }
               else {
-                terminal.push("No Entries Found For " + this.capitalize(command[0]) + " " + this.capitalize(field));
+                terminal.push("No Entries Found For " + command[0] + " " + this.capitalize(field));
               }
             }
             this.setState({ results: terminal })
@@ -171,4 +157,12 @@ class Terminal extends React.Component {
   }
 }
 
-export default Terminal
+const structuredSelector = createStructuredSelector({
+  map: state => state.itemsReducer.map,
+});
+
+const mapDispatchToProps = { getItems };
+
+// maps parts of the Redux State and Actions to this component's props
+export default connect(structuredSelector, mapDispatchToProps)(Terminal);
+//export default Terminal

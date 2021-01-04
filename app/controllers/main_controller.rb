@@ -4,16 +4,28 @@ class MainController < ApplicationController
 
   def index; end
 
+  def item
+    @data = Item.ransack(name_eq: params[:q]).result(distinct: true)
+  end
+
   def villager
-    @data = Villager.ransack(villager_eq: params[:q]).result(distinct: true)
+    @data = Villager.ransack(name_eq: params[:q]).result(distinct: true)
   end
 
   def season
-    @data = Season.ransack(season_eq: params[:q]).result(distinct: true)
+    @data = Season.ransack(name_eq: params[:q]).result(distinct: true)
   end
 
   def crop
-    @data = Crop.ransack(crop_eq: params[:q]).result(distinct: true)
+    @data = Crop.ransack(name_eq: params[:q]).result(distinct: true)
+  end
+
+  def fish
+    @data = Fish.ransack(name_eq: params[:q]).result(distinct: true)
+  end
+
+  def forage
+    @data = Forage.ransack(name_eq: params[:q]).result(distinct: true)
   end
 
   private
