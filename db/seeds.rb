@@ -7,6 +7,17 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'csv'
 
+item_info = File.read(Rails.root.join('lib', 'seeds', 'ItemData.csv'))
+item = CSV.parse(item_info, :headers => true, :encoding => 'ISO-8859-1')
+
+item.each do |row|
+    i = Item.new
+    i.name = row['Item']
+    i.category = row['Category']
+    i.save
+end
+puts "There are now #{Item.count} rows in the items table"
+
 villager_info = File.read(Rails.root.join('lib', 'seeds', 'VillagerData.csv'))
 villager = CSV.parse(villager_info, :headers => true, :encoding => 'ISO-8859-1')
 
