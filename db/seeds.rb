@@ -87,8 +87,8 @@ fish.each do |row|
     f = Fish.new
     f.name = row['Fish']
     f.season_name = row['Season']
-    f.location = row['Sell']
-    f.sell = row['Location']
+    f.location = row['Location']
+    f.sell = row['Sell']
     f.time = row['Time']
     f.weather = row['Weather']
     f.difficulty = row['Difficulty']

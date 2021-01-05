@@ -32,7 +32,20 @@ class Container extends React.Component {
   }
 
   addTerminals() {
-    if(this.state.numTerminals !== 8) {
+    let maxTerms = 8;
+    
+    // Limiting number of terminals by screen size
+    /*if(window.matchMedia("(max-width: 850px)").matches) {
+      maxTerms = 1;
+    }
+    else if(window.matchMedia("(max-width: 1024px)").matches) {
+      maxTerms = 4;
+    }
+    else if(window.matchMedia("(max-width: 1180px)").matches) {
+      maxTerms = 6;
+    }*/
+
+    if(this.state.numTerminals < maxTerms) {
       this.setState({
         numTerminals: this.state.numTerminals + 1
       })
@@ -61,6 +74,8 @@ class Container extends React.Component {
           addTerms={this.addTerminals} 
           removeTerms={this.removeTerminals} 
           marginBottom={marginBottom}
+          content={this.props.terminals[i]}
+          index={i}
         >
         </Terminal>
       );
@@ -78,7 +93,7 @@ class Container extends React.Component {
 }
 
 const structuredSelector = createStructuredSelector({
-    map: state => state.itemsReducer.map,
+    terminals: state => state.terminalsReducer.terminals
 });
 
 const mapDispatchToProps = { getItems };

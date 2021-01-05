@@ -2,23 +2,41 @@ import React from "react"
 
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
-import { getItems } from '../redux/actions';
+import { updateResults, removeResults } from '../redux/actions';
 
 class Terminal extends React.Component {
   constructor(props) {
     super(props);
+
+    this.removeTerminal = this.removeTerminal.bind(this);
   
     this.state = {
-      results: []
+      results: this.props.content
     };
   }
+
+  componentDidUpdate(prevProps) {
+    if(this.props.content !== prevProps.content) {
+      this.setState({results: this.props.content})
+    }
+  }
+
+  updateResults = (index, results) => {
+    this.props.updateResults(index, results);
+  };
 
   capitalize(str) {
     return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
   }
 
   _handleKeyDown = (e) => {
-    if (e.key === 'Enter' && e.target.value !== "") {
+    if (e.key === 'Tab') {
+      e.preventDefault();
+      const inputs = document.getElementsByClassName("terminal-input");
+      if (this.props.index === this.props.numTerminals-1) inputs[0].focus();
+      else inputs[this.props.index+1].focus();
+    }
+    else if (e.key === 'Enter' && e.target.value !== "") {
       let command = e.target.value.split(" ");
       
       // Remove extra space at beginning and end
@@ -35,8 +53,19 @@ class Terminal extends React.Component {
           e.target.value = "";
           return;
         }
+        else if(command[0] === "New") {
+          this.props.addTerms();
+          e.target.value = "";
+          return;
+        }
+        else if(command[0] === "Exit") {
+          this.removeTerminal();
+          e.target.value = "";
+          return;
+        }
         else if(command[0] === "Clear") {
           this.setState({ results: [] })
+          this.updateResults(this.props.index, []);
           e.target.value = "";
           return;
         }
@@ -47,6 +76,7 @@ class Terminal extends React.Component {
             popped = newResults.pop();
           }
           this.setState({ results: newResults })
+          this.updateResults(this.props.index, newResults);
           e.target.value = "";
           return;
         }
@@ -83,43 +113,63 @@ class Terminal extends React.Component {
         console.log(url)
         $.getJSON(url)
           .then(response => {
-            const keys = Object.keys(response.data[0]);
-            const values = Object.values(response.data[0]);
+            let keys = Object.keys(response.data[0]);
+            let values = Object.values(response.data[0]);
+            
+            // Remove name key value pair
+            const nameIndex = keys.indexOf("name");
+            keys.splice(nameIndex, 1);
+            values.splice(nameIndex, 1);
 
-            if(field === "") {
+            // If category given
+            if(keys.includes(field)) {
+              let index = keys.indexOf(field);
+              keys = [keys[index]];
+              values = [values[index]];
+            }
+
+            if(field === "" || keys.includes(field)) {
               for(let i = 0; i<keys.length; i++) {
-                if(keys[i] !== "name") {
-                  //if(category === "season" && Array.isArray(values[i])) {
-                  if(Array.isArray(values[i])) {
-                    if(values[i].length !== 0) {
-                      let string = this.capitalize(keys[i]) + ": "
-                      for(let j = 0; j<values[i].length; j++) {
-                        if(j === values[i].length-1) string += values[i][j].name;
-                        else string += values[i][j].name + ", ";
-                      }
-                      terminal.push(string);
+                // If the value is an array
+                if(Array.isArray(values[i])) {
+                  // If the array is non-empty
+                  if(values[i].length !== 0) {
+                    let string = this.capitalize(keys[i]) + ": "
+                    for(let j = 0; j<values[i].length; j++) {
+                      string += values[i][j].name + ", ";
                     }
+                    terminal.push(string.slice(0, -2));
                   }
-                  else if(values[i]) terminal.push(this.capitalize(keys[i]) + ": " + values[i]);
-                  else terminal.push(this.capitalize(keys[i]) + ": None");
+                  // If the array is empty
+                  else {
+                    terminal.push(this.capitalize(keys[i]) + ": None");
+                  }
                 }
+                // Normal value given
+                else if(values[i]) terminal.push(this.capitalize(keys[i]) + ": " + values[i]);
+                // No value (e.g. null) given
+                else terminal.push(this.capitalize(keys[i]) + ": None");
               }
             }
             else {
-              console.log(field);
-              if(keys.includes(field) && field !== "name") {
-                terminal.push(this.capitalize(field) + ": " + response.data[0][field]);
-              }
-              else {
-                terminal.push("No Entries Found For " + command[0] + " " + this.capitalize(field));
-              }
+              terminal.push("No Entries Found For " + command[0] + " " + this.capitalize(field));
             }
+
             this.setState({ results: terminal })
           })
       }
-
       // Clear the input field
       e.target.value = "";
+
+      // Update store with new terminal value
+      this.updateResults(this.props.index, terminal);
+    }
+  }
+
+  async removeTerminal() {
+    if(this.props.numTerminals > 1) {
+      await this.props.removeResults(this.props.index);
+      this.props.removeTerms();
     }
   }
 
@@ -141,7 +191,7 @@ class Terminal extends React.Component {
       <React.Fragment>
         <div className="terminal-container">
           <div className={"terminal-header terminal-header-" + this.props.numTerminals}>
-            <div className={"terminal-button-" + (this.props.numTerminals < 3 ? 'large' : 'small')} onClick={this.props.removeTerms}>-</div>
+            <div className={"terminal-button-" + (this.props.numTerminals < 3 ? 'large' : 'small')} onClick={() => this.removeTerminal()}>-</div>
             <div>Stardew Valley API</div>
             <div className={"terminal-button-" + (this.props.numTerminals < 3 ? 'large' : 'small')}  onClick={this.props.addTerms}>+</div>
           </div>
@@ -161,7 +211,7 @@ const structuredSelector = createStructuredSelector({
   map: state => state.itemsReducer.map,
 });
 
-const mapDispatchToProps = { getItems };
+const mapDispatchToProps = { updateResults, removeResults };
 
 // maps parts of the Redux State and Actions to this component's props
 export default connect(structuredSelector, mapDispatchToProps)(Terminal);

@@ -10,7 +10,6 @@ const itemsReducer = (state = initialState, action) => {
                 itemMap.set(action.json.data[i].name, action.json.data[i].category);
             }
             return {
-                ...state,
                 map: itemMap,
             }
         default:

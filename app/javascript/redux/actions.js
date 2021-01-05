@@ -1,13 +1,25 @@
 export function getItems() {
     return (dispatch) => {
         $.getJSON('/item')
-          .then(response => dispatch(getThingsSuccess('items', response)))
+          .then(response => dispatch(getItemsSuccess('items', response)))
           .catch(error => console.log(error));
       };
 };
 
-export function getThingsSuccess(type, json) {
+export function getItemsSuccess(type, json) {
     return {
         type: type, json
     };
 };
+
+export function updateResults(index, terminal) {
+    return {
+        type: 'update', index: index, terminal
+    }
+}
+
+export function removeResults(index) {
+    return {
+        type: 'remove', index: index
+    }
+}
