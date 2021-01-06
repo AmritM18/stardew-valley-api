@@ -1,0 +1,8 @@
+Name,Description,Recipe,Source
+Sturdy Ring,Cuts the duration of negative status effects in half.,"Copper Bar(2), Bug Meat(25), Slime(25)",Combat Level 1
+Warrior Ring,"Occasionally infuses the wearer with ""warrior energy"" after slaying a monster.","Iron Bar(10), Coal(25), Frozen Tear(10)",Combat Level 4
+Ring of Yoba,Occasionally shields the wearer from damage.,"Gold Bar(5), Iron Bar(5), Diamond(1)",Combat Level 7
+Thorns Ring,"When enemies damage you, they will take damage themselves.","Bone Fragment(50), Stone(50), Gold Bar(1)",
+Glowstone Ring,"Emits a constant light, and also increases your radius for collecting items.","Solar Essence(5), Iron Bar(5)",
+Iridium Band,"Glows, attracts items, and increases attack damage by 10%.","Iridium Bar(5), Solar Essence(50), Void Essence(50)",Combat Level 9
+Wedding Ring,An old Zuzu City tradition... It's used to ask for another farmer's hand in marriage.Note: This recipe is available only in Multiplayer.,"Iridium Bar(5), Prismatic Shard(1)",Traveling Cart for 500g

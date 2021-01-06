@@ -1,0 +1,14 @@
+Name,Description,Recipe,Source
+Wood Floor,Place on the ground to create paths or to decorate your floors.,Wood(1),Carpenter's Shop for 100g
+Rustic Plank Floor,Place on the ground to create paths or to decorate your floors.,Wood(1),Carpenter's Shop for 200g
+Straw Floor,Place on the ground to create paths or to spruce up your floors.,"Wood(1), Fiber(1)",Carpenter's Shop for 200g
+Weathered Floor,Place on the ground to create paths or to spruce up your floors.,Wood(1),Dwarf(500g)
+Crystal Floor (5),Place on the ground to create paths or to spruce up your floors.,Refined Quartz(1),Krobus(500g)
+Stone Floor,Place on the ground to create paths or to spruce up your floors.,Stone(1),Carpenter's Shop for 100g
+Stone Walkway Floor,,Stone(1),Carpenter's Shop for 200g
+Brick Floor (5),Place on the ground to create paths or to decorate your floors.,"Clay(2), Stone(5)",Carpenter's Shop for 500g
+Wood Path,Place on the ground to create paths or to spruce up your floors.,Wood(1),Starter
+Gravel Path,Place on the ground to create paths or to spruce up your floors.,Stone(1),Starter
+Cobblestone Path,Place on the ground to create paths or to spruce up your floors.,Stone(1),Starter
+Stepping Stone Path,Place on the ground to create paths or to spruce up your floors.,Stone(1),Carpenter's Shop for 100g
+Crystal Path (5),Place on the ground to create paths or to spruce up your floors.,Refined Quartz(1),Carpenter's Shop for 200g

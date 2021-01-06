@@ -1,0 +1,17 @@
+Name,Description,Recipe,Source
+Torch,Provides a modest amount of light.,"Wood(1), Sap(2)",Starter
+Campfire,Provides a moderate amount of light.,"Stone(10), Wood(10), Fiber(10)",Starter
+Wooden Brazier,Provides a moderate amount of light.,"Wood(10), Coal(1), Fiber(5)",Carpenter's Shop for 250g
+Stone Brazier,Provides a moderate amount of light.,"Stone(10), Coal(1), Fiber(5)",Carpenter's Shop for 400g
+Gold Brazier,Provides a moderate amount of light.,"Gold Bar(1), Coal(1), Fiber(5)","Carpenter's Shop for 1,000g"
+Carved Brazier,Provides a moderate amount of light.,"Hardwood(10), Coal(1)","Carpenter's Shop for 2,000g"
+Stump Brazier,Provides a moderate amount of light.,"Hardwood(5), Coal(1)",Carpenter's Shop for 800g
+Barrel Brazier,Provides a moderate amount of light.,"Wood(50), Solar Essence(1), Coal(1)",Carpenter's Shop for 800g
+Skull Brazier,Provides a moderate amount of light.,"Before 1.5
+ Hardwood(10), Solar Essence(1), Coal(1),
+After 1.5
+ Bone Fragment(10)","Carpenter's Shop for 3,000g"
+Marble Brazier,Provides a moderate amount of light.,"Marble(1), Aquamarine(1), Stone(100)","Carpenter's Shop for 5,000g"
+Wood Lamp-post,Provides a good amount of light.,"Wood(50), Battery Pack(1)",Carpenter's Shop for 500g
+Iron Lamp-post,Provides a good amount of light.,"Iron Bar(1), Battery Pack(1)","Carpenter's Shop for 1,000g"
+Jack-O-Lantern,A whimsical fall decoration.,"Pumpkin(1), Torch(1)","Pierre's stand at Spirit's Eve festival (2,000g)"

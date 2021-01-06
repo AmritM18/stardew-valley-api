@@ -1,0 +1,4 @@
+Name,Description,Recipe,Source
+Sprinkler,Waters the 4 adjacent tiles every morning.,"Copper Bar(1), Iron Bar(1)",Farming Level 2
+Quality Sprinkler,Waters the 8 adjacent tiles every morning.,"Iron Bar(1), Gold Bar(1), Refined Quartz(1)",Farming Level 6
+Iridium Sprinkler,Waters the 24 adjacent tiles every morning.,"Gold Bar(1), Iridium Bar(1), Battery Pack(1)",Farming Level 9

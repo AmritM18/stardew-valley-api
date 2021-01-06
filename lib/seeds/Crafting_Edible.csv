@@ -1,0 +1,5 @@
+Name,Description,Recipe,Energy,Health,Source
+Field Snack,A quick snack to fuel the hungry forager.,"Acorn(1), Maple Seed(1), Pine Cone(1)",45,18,Foraging Level 1
+Bug Steak,The last resort of the hungry cave diver.,Bug Meat(10),45,30,Combat Level 1
+Life Elixir,Restores health to full.,"Red Mushroom(1), Purple Mushroom(1), Morel(1), Chanterelle(1)",200,80,Combat Level 2
+Oil of Garlic,Drink this and weaker monsters will avoid you.,"Garlic(10), Oil(1)",200,80,Combat Level 6

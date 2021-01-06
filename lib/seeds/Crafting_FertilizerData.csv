@@ -1,0 +1,11 @@
+Name,Description,Recipe,Source
+Basic Fertilizer,"Improves soil quality a little, increasing your chance to grow quality crops. Mix into tilled soil.",Sap(2),Farming Level 1
+Quality Fertilizer,"Improves soil quality, increasing your chance to grow quality crops. Mix into tilled soil.","Sap(2), Any Fish (1)",Farming Level 9
+Deluxe Fertilizer (5),"Greatly improves soil quality, increasing your chance to grow quality crops. Mix into tilled soil.","Iridium Bar(1), Sap(40)",Purchase from Mr Qi for  20
+Speed-Gro (5),Stimulates leaf production. Guaranteed to increase growth rate by at least 10%. Mix into tilled soil.,"Pine Tar(1), Clam(1)",Farming Level 3
+Deluxe Speed-Gro (5),Stimulates leaf production. Guaranteed to increase growth rate by at least 25%. Mix into tilled soil.,"Oak Resin(1), Coral(1)",Farming Level 8
+Hyper Speed-Gro,Greatly stimulates leaf production. Guaranteed to increase growth rate by at least 33%. Mix into tilled soil.,"Radioactive Ore(1), Bone Fragment(3), Solar Essence(1)",Purchase from Mr Qi for  30
+Basic Retaining Soil,This soil has a chance of staying watered overnight. Mix into tilled soil.,Stone(2),Farming Level 4
+Quality Retaining Soil (2),This soil has a good chance of staying watered overnight. Mix into tilled soil.,"Stone(3), Clay(1)",Farming Level 7
+Deluxe Retaining Soil (2),This soil has a 100% chance of staying watered overnight. Mix into tilled soil.,"Stone(5), Fiber(3), Clay(1)",Purchase from Island Trader for  Cinder Shard(50)
+Tree Fertilizer,"Sprinkle on a wild tree to ensure rapid growth, even in winter. Doesn't work on fruit trees.","Fiber(5), Stone(5)",Foraging Level 7

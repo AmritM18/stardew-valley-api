@@ -1,0 +1,9 @@
+Name,Description,Recipe,Source
+Mayonnaise Machine,Turns eggs into mayonnaise.,"Wood(15), Stone(15), Earth Crystal(1), Copper Bar(1)",Farming Level 2
+Bee House,Place outside and wait for delicious honey! (Except in Winter).,"Wood(40), Coal(8), Iron Bar(1), Maple Syrup(1)",Farming Level 3
+Preserves Jar,Turns vegetables into pickles and fruit into jam.,"Wood(50), Stone(40), Coal(8)",Farming Level 4
+Cheese Press,Turns milk into cheese.,"Wood(45), Stone(45), Hardwood(10), Copper Bar(1)",Farming Level 6
+Loom,Turns raw wool into fine cloth.,"Wood(60), Fiber(30), Pine Tar(1)",Farming Level 7
+Keg,Place a fruit or vegetable in here. Eventually it will turn into a beverage.,"Wood(30), Copper Bar(1), Iron Bar(1), Oak Resin(1)",Farming Level 8
+Oil Maker,Makes gourmet truffle oil.,"Slime(50), Hardwood(20), Gold Bar(1)",Farming Level 8
+Cask,Use in the cellar to age products like wine and cheese.,"Wood(20), Hardwood(1)",Farmhouse cellar upgrade

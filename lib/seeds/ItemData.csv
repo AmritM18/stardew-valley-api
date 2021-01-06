@@ -163,3 +163,286 @@ Red Snapper,fish
 Halibut,fish
 Midnight Carp,fish
 Glacierfish,fish
+Fried Egg,recipe
+Omelet,recipe
+Salad,recipe
+Cheese Cauliflower,recipe
+Baked Fish,recipe
+Parsnip Soup,recipe
+Vegetable Medley,recipe
+Complete Breakfast,recipe
+Fried Calamari,recipe
+Strange Bun,recipe
+Lucky Lunch,recipe
+Fried Mushroom,recipe
+Pizza,recipe
+Bean Hotpot,recipe
+Glazed Yams,recipe
+Carp Surprise,recipe
+Hashbrowns,recipe
+Pancakes,recipe
+Salmon Dinner,recipe
+Fish Taco,recipe
+Crispy Bass,recipe
+Pepper Poppers,recipe
+Bread,recipe
+Tom Kha Soup,recipe
+Trout Soup,recipe
+Chocolate Cake,recipe
+Pink Cake,recipe
+Rhubarb Pie,recipe
+Cookie,recipe
+Spaghetti,recipe
+Fried Eel,recipe
+Spicy Eel,recipe
+Sashimi,recipe
+Maki Roll,recipe
+Tortilla,recipe
+Red Plate,recipe
+Eggplant Parmesan,recipe
+Rice Pudding,recipe
+Ice Cream,recipe
+Blueberry Tart,recipe
+Autumn's Bounty,recipe
+Pumpkin Soup,recipe
+Super Meal,recipe
+Cranberry Sauce,recipe
+Stuffing,recipe
+Farmer's Lunch,recipe
+Survival Burger,recipe
+Dish O' The Sea,recipe
+Miner's Treat,recipe
+Roots Platter,recipe
+Triple Shot Espresso,recipe
+Seafoam Pudding,recipe
+Algae Soup,recipe
+Pale Broth,recipe
+Plum Pudding,recipe
+Artichoke Dip,recipe
+Stir Fry,recipe
+Roasted Hazelnuts,recipe
+Pumpkin Pie,recipe
+Radish Salad,recipe
+Fruit Salad,recipe
+Blackberry Cobbler,recipe
+Cranberry Candy,recipe
+Bruschetta,recipe
+Coleslaw,recipe
+Fiddlehead Risotto,recipe
+Poppyseed Muffin,recipe
+Chowder,recipe
+Fish Stew,recipe
+Escargot,recipe
+Lobster Bisque,recipe
+Maple Bar,recipe
+Crab Cakes,recipe
+Shrimp Cocktail,recipe
+Ginger Ale,recipe
+Banana Pudding,recipe
+Mango Sticky Rice,recipe
+Poi,recipe
+Tropical Curry,recipe
+Squid Ink Ravioli,recipe
+Quartz,mineral
+Earth Crystal,mineral
+Frozen Tear,mineral
+Fire Quartz,mineral
+Emerald,mineral
+Aquamarine,mineral
+Ruby,mineral
+Amethyst,mineral
+Topaz,mineral
+Jade,mineral
+Diamond,mineral
+Prismatic Shard,mineral
+Tigerseye,mineral
+Opal,mineral
+Fire Opal,mineral
+Alamite,mineral
+Bixite,mineral
+Baryte,mineral
+Aerinite,mineral
+Calcite,mineral
+Dolomite,mineral
+Esperite,mineral
+Fluorapatite,mineral
+Geminite,mineral
+Helvite,mineral
+Jamborite,mineral
+Jagoite,mineral
+Kyanite,mineral
+Lunarite,mineral
+Malachite,mineral
+Neptunite,mineral
+Lemon Stone,mineral
+Nekoite,mineral
+Orpiment,mineral
+Petrified Slime,mineral
+Thunder Egg,mineral
+Pyrite,mineral
+Ocean Stone,mineral
+Ghost Crystal,mineral
+Jasper,mineral
+Celestine,mineral
+Marble,mineral
+Sandstone,mineral
+Granite,mineral
+Basalt,mineral
+Limestone,mineral
+Soapstone,mineral
+Hematite,mineral
+Mudstone,mineral
+Obsidian,mineral
+Slate,mineral
+Fairy Stone,mineral
+Star Shards,mineral
+Geode,mineral
+Frozen Geode,mineral
+Magma Geode,mineral
+Omni Geode,mineral
+Field Snack,edible
+Bug Steak,edible
+Life Elixir,edible
+Oil of Garlic,edible
+Cherry Bomb,bomb
+Bomb,bomb
+Mega Bomb,bomb
+Gate,fence
+Wood Fence,fence
+Stone Fence,fence
+Iron Fence (10),fence
+Hardwood Fence,fence
+Sprinkler,sprinkler
+Quality Sprinkler,sprinkler
+Iridium Sprinkler,sprinkler
+Mayonnaise Machine,artisanequipment
+Bee House,artisanequipment
+Preserves Jar,artisanequipment
+Cheese Press,artisanequipment
+Loom,artisanequipment
+Keg,artisanequipment
+Oil Maker,artisanequipment
+Cask,artisanequipment
+Basic Fertilizer,fertilizer
+Quality Fertilizer,fertilizer
+Deluxe Fertilizer (5),fertilizer
+Speed-Gro (5),fertilizer
+Deluxe Speed-Gro (5),fertilizer
+Hyper Speed-Gro,fertilizer
+Basic Retaining Soil,fertilizer
+Quality Retaining Soil (2),fertilizer
+Deluxe Retaining Soil (2),fertilizer
+Tree Fertilizer,fertilizer
+Wild Seeds (Sp)(Spring Seeds),seed
+Wild Seeds (Su)(Summer Seeds),seed
+Wild Seeds (Fa)(Fall Seeds),seed
+Wild Seeds (Wi)(Winter Seeds),seed
+Ancient Seeds,seed
+Grass Starter,seed
+Tea Sapling,seed
+Fiber Seeds (4),seed
+Wood Floor,decor
+Rustic Plank Floor,decor
+Straw Floor,decor
+Weathered Floor,decor
+Crystal Floor (5),decor
+Stone Floor,decor
+Stone Walkway Floor,decor
+Brick Floor (5),decor
+Wood Path,decor
+Gravel Path,decor
+Cobblestone Path,decor
+Stepping Stone Path,decor
+Crystal Path (5),decor
+Spinner,fishing
+Trap Bobber,fishing
+Cork Bobber,fishing
+Quality Bobber,fishing
+Treasure Hunter,fishing
+Dressed Spinner,fishing
+Barbed Hook,fishing
+Magnet (3),fishing
+Bait (5),fishing
+Wild Bait (5),fishing
+Crab Pot,fishing
+Sturdy Ring,ring
+Warrior Ring,ring
+Ring of Yoba,ring
+Thorns Ring,ring
+Glowstone Ring,ring
+Iridium Band,ring
+Wedding Ring,ring
+Monster Musk,fence
+Fairy Dust,fence
+Warp Totem: Beach,fence
+Warp Totem: Mountains,fence
+Warp Totem: Farm,fence
+Warp Totem: Desert,fence
+Warp Totem: Island,fence
+Rain Totem,fence
+Torch,lighting
+Campfire,lighting
+Wooden Brazier,lighting
+Stone Brazier,lighting
+Gold Brazier,lighting
+Carved Brazier,lighting
+Stump Brazier,lighting
+Barrel Brazier,lighting
+Skull Brazier,lighting
+Marble Brazier,lighting
+Wood Lamp-post,lighting
+Iron Lamp-post,lighting
+Jack-O-Lantern,lighting
+Charcoal Kiln,refiningequipment
+Crystalarium,refiningequipment
+Furnace,refiningequipment
+Lightning Rod,refiningequipment
+Solar Panel,refiningequipment
+Recycling Machine,refiningequipment
+Seed Maker,refiningequipment
+Slime Incubator,refiningequipment
+Ostrich Incubator,refiningequipment
+Slime Egg-Press,refiningequipment
+Tapper,refiningequipment
+Heavy Tapper,refiningequipment
+Worm Bin,refiningequipment
+Bone Mill,refiningequipment
+Geode Crusher,refiningequipment
+Tub o' Flowers,furniture
+Wicked Statue,furniture
+Flute Block,furniture
+Drum Block,furniture
+Chest,misc
+Stone Chest,misc
+Wood Sign,misc
+Stone Sign,misc
+Dark Sign,misc
+Garden Pot,misc
+Scarecrow,misc
+Deluxe Scarecrow,misc
+Staircase,misc
+Explosive Ammo (5),misc
+Transmute (Fe),misc
+Transmute (Au),misc
+Mini-Jukebox,misc
+Mini-Obelisk,misc
+Farm Computer,misc
+Hopper,misc
+Cookout Kit,misc
+Recipe,crafting
+Mineral,crafting
+Edible,crafting
+Bomb,crafting
+Fence,crafting
+Sprinkler,crafting
+Artisan Equipment,crafting
+Fertilizer,crafting
+Seed,crafting
+Decor,crafting
+Fishing,crafting
+Ring,crafting
+Fence,crafting
+Lighting,crafting
+Refining Equipment,crafting
+Furniture,crafting
+Misc,crafting

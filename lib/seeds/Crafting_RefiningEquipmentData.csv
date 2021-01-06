@@ -1,0 +1,16 @@
+Name,Description,Recipe,Source
+Charcoal Kiln,Turns 10 pieces of wood into one piece of coal.,"Wood(20), Copper Bar(2)",Foraging Level 4
+Crystalarium,Insert a gem of your choice and it will grow copies.,"Stone(99), Gold Bar(5), Iridium Bar(2), Battery Pack(1)",Mining Level 9
+Furnace,Turns ore and coal into metal bars.,"Copper Ore(20), Stone(25)",Clint (Morning after collecting 1+ Copper Ore)
+Lightning Rod,Collects energy from lightning storms and turns it into battery packs.,"Iron Bar(1), Refined Quartz(1), Bat Wing(5)",Foraging Level 6
+Solar Panel,Slowly generates batteries when left in the sun.,"Refined Quartz(10), Iron Bar(5), Gold Bar(5)",Caroline(Special Order)
+Recycling Machine,Turns fishing trash into resources.,"Wood(25), Stone(25), Iron Bar(1)",Fishing Level 4
+Seed Maker,Place crops inside to produce a varying amount of seeds. Doesn't work with fruit tree crops.,"Wood(25), Coal(10), Gold Bar(1)",Farming Level 9
+Slime Incubator,Hatches slimes eggs into slimes. Allows you to raise slimes outdoors.,"Iridium Bar(2), Slime(100)",Combat Level 8
+Ostrich Incubator,Hatches ostrich eggs into baby ostriches. Place in a barn.,"Bone Fragment(50), Hardwood(50), Cinder Shard(20)",Complete the Island Field Office Collection
+Slime Egg-Press,Compresses 100 pieces of slime into a slime egg. It's a miracle of science!,"Coal(25), Fire Quartz(1), Battery Pack(1)",Combat Level 6
+Tapper,"Place on a maple, oak, or pine tree and wait for the reservoir to fill with product!","Wood(40), Copper Bar(2)",Foraging Level 3
+Heavy Tapper,"Place on a maple, oak, or pine tree and wait for the reservoir to fill with product! Works twice as fast as a normal tapper.","Hardwood(30), Radioactive Bar(1)",Purchase from Mr Qi for  20
+Worm Bin,Produces bait on a regular basis. The worms are self-sufficient.,"Hardwood(25), Gold Bar(1), Iron Bar(1), Fiber(50)",Fishing Level 8
+Bone Mill,Turns bone items into fertilizers.,"Bone Fragment(10), Clay(3), Stone(20)",Gunther(Special Order)
+Geode Crusher,Breaks geodes open automatically. Requires coal to operate.,"Gold Bar(2), Stone(50), Diamond(1)",Clint(Special Order)

@@ -1,0 +1,6 @@
+Name,Description,Life,Recipe,Source
+Gate,Allows you to pass through a fence.,400 days,Wood(10),Starter
+Wood Fence,Keeps grass and animals contained!,54-58 days,Wood(2),Starter
+Stone Fence,Lasts longer than a wood fence.,118-122 days,Stone(2),Farming Level 2
+Iron Fence (10),Lasts longer than a stone fence.,248-252 days,Iron Bar(1),Farming Level 4
+Hardwood Fence,The most durable type of fence.,558-562 days,Hardwood(1),Farming Level 6

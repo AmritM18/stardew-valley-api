@@ -1,0 +1,13 @@
+Name,Description,Recipe,Source
+Wild Seeds (Sp)(Spring Seeds),"An assortment of wild spring seeds.
+(Note: The crafted item is called ""Spring Seeds."" The recipe produces 10 seeds per craft.)","Wild Horseradish(1), Daffodil(1), Leek(1), Dandelion(1)",Foraging Level 1
+Wild Seeds (Su)(Summer Seeds),"An assortment of wild summer seeds.
+(Note: The crafted item is called ""Summer Seeds."" The recipe produces 10 seeds per craft.)","Spice Berry(1), Grape(1), Sweet Pea(1)",Foraging Level 4
+Wild Seeds (Fa)(Fall Seeds),"An assortment of wild fall seeds.
+(Note: The crafted item is called ""Fall Seeds."" The recipe produces 10 seeds per craft.)","Common Mushroom(1), Wild Plum(1), Hazelnut(1), Blackberry(1)",Foraging Level 6
+Wild Seeds (Wi)(Winter Seeds),"An assortment of wild winter seeds.
+(Note: The crafted item is called ""Winter Seeds."" The recipe produces 10 seeds per craft.)","Winter Root(1), Crystal Fruit(1), Snow Yam(1), Crocus(1)",Foraging Level 7
+Ancient Seeds,Could these still grow?,Ancient Seed(1),Donating Ancient Seed to museum
+Grass Starter,Place this on your farm to start a new patch of grass.,Fiber(10),"Purchase from Pierre's for 1,000g"
+Tea Sapling,"Takes 20 days to mature. Produces tea leaves during the final week of each season, except winter. No watering necessary!","Wild Seeds (Any), (2), Fiber(5), Wood(5)",Mail the day after Caroline's 2-heart event
+Fiber Seeds (4),Plant these in any season. Does not require watering. Harvest with the scythe. Takes 7 days to grow.,"Mixed Seeds(1), Sap(5), Clay(1)",Linus(Special Order)
