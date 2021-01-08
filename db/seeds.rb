@@ -344,3 +344,33 @@ decor.each do |row|
     puts "Added #{f.name} with description #{f.description}"
 end
 puts "There are now #{Decor.count} rows in the decor table"
+
+artisan_goods_info = File.read(Rails.root.join('lib', 'seeds', 'ArtisanData.csv'))
+artisan_good = CSV.parse(artisan_goods_info, :headers => true, :encoding => 'ISO-8859-1')
+
+artisan_good.each do |row|
+    f = ArtisanGood.new
+    f.name = row['Name']
+    f.recipe = row['Recipe']
+    f.time = row['Time']
+    f.sell = row['Sell']
+    f.equipment = row['Equipment']
+    f.save
+    puts "Added #{f.name}"
+end
+puts "There are now #{ArtisanGood.count} rows in the artisan good table"
+
+animal_product_info = File.read(Rails.root.join('lib', 'seeds', 'AnimalProductData.csv'))
+animal_product = CSV.parse(animal_product_info, :headers => true, :encoding => 'ISO-8859-1')
+
+animal_product.each do |row|
+    f = AnimalProduct.new
+    f.name = row['Name']
+    f.sell = row['Sell']
+    f.animal = row['Animal']
+    f.cost = row['Cost']
+    f.requirement = row['Requirement']
+    f.save
+    puts "Added #{f.name}"
+end
+puts "There are now #{AnimalProduct.count} rows in the animal product table"

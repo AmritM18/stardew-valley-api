@@ -1,0 +1,28 @@
+Name,Recipe,Time,Sell,Equipment
+Honey,It's a sweet syrup produced by bees.,4170-6120m (3-4 Days),"Wild: 100g, Tulip: 160g, Blue Jazz: 200g, Sunflower: 260g, Summer Spangle: 280g, Poppy: 380g, Sunflower: 260g, Fairy Rose: 680g",Bee House
+Wine,Any fruit (1),"0 Days, 14 Days (Silver), 28 Days (Gold), 56 Days (Iridium)","3 × BaseFruit Price, (3 × Base) × 1.25 (Silver), (3 × Base) × 1.5 (Gold), (3 × Base) × 2 (Iridium)",Cask
+Pale Ale,Hops(1),"0 Days, 9 Days (Silver), 17 Days (Gold), 34 Days (Iridium)","300g, 375g (Silver), 450g (Gold), 600g (Iridium)",Cask
+Beer,Wheat(1),"0 Days, 7 Days (Silver), 14 Days (Gold), 28 Days (Iridium)","200g, 250g (Silver), 300g (Gold), 400g (Iridium)",Cask
+Mead,Honey(1),"0 Days, 7 Days (Silver), 14 Days (Gold), 28 Days (Iridium)","200g, 250g (Silver), 300g (Gold), 400g (Iridium)",Cask
+Cheese,Milk(1) or Large Milk(1),"0 Days, 3 Days (Silver), 7 Days (Gold), 14 Days (Iridium)","230g, 287g (Silver), 345g (Gold), 460g (Iridium)",Cask
+Goat Cheese,Goat Milk(1) or Large Goat Milk(1),"0 Days, 3 Days (Silver), 7 Days (Gold), 14 Days (Iridium)","400g, 500g (Silver), 600g (Gold), 800g (Iridium)",Cask
+Cheese,Milk(1) or Large Milk(1),200m (≈3h),"230g, 345g",Cheese Press
+Goat Cheese,Goat Milk(1) or Large Goat Milk(1),200m (≈3h),"400g, 600g",Cheese Press
+Beer,Wheat(1),1750 mins (1 Day),200g,Keg
+Coffee,Coffee Bean(5),120 mins (2 Hours),150g,Keg
+Green Tea,Tea Leaves(1),180 mins (3 Hours),100g,Keg
+Juice,Any Vegetable (1),6000 mins (4 Days),2.25 × Vegetable Base Price,Keg
+Mead,Honey(1),600 mins (10 hours),200g,Keg
+Pale Ale,Hops(1),2250 mins (1-2 Days),300g,Keg
+Wine,Any Fruit (1),10000 mins (6.25 Days),3 × Fruit Base Price,Keg
+Cloth,Wool(1),4 Hours,470g,Loom
+Mayonnaise,Egg(1) or Large Egg(1),3 Hours,"190g, 285g",Mayonnaise Machine
+Duck Mayonnaise,Duck Egg(1),3 Hours,"375g, ",Mayonnaise Machine
+Void Mayonnaise,Void Egg(1),3 Hours,"275g, ",Mayonnaise Machine
+Dinosaur Mayonnaise,Dinosaur Egg(1),3 Hours,"800g, ",Mayonnaise Machine
+Truffle Oil,Truffle(1),360m (6 Hours),"1,065g",Oiler Maker
+Oil,"Corn(1), Sunflower Seeds (1), Sunflower (1)","1000m (≈16 Hours), 3200m (2 Days), 60m (1 Hour)",100g,Oiler Maker
+Pickles,Any vegetable (1),4000m (2-3 days),2 × Base Vegetable Price + 50,Preserves Jar
+Jelly,Any fruit (1),4000m (2-3 days),2 × Base Fruit Price + 50,Preserves Jar
+Caviar,Sturgeon Roe(1),6000m (4 days),500g,Preserves Jar
+Aged Roe,Roe(1),4000m (2-3 days),2 × base Roe sell price,Preserves Jar

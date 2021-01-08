@@ -1,0 +1,2 @@
+class AnimalProduct < ApplicationRecord
+end

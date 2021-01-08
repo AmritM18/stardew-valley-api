@@ -1,0 +1,2 @@
+class ArtisanGood < ApplicationRecord
+end
