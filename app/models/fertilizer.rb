@@ -1,0 +1,2 @@
+class Fertilizer < ApplicationRecord
+end

@@ -18,3 +18,22 @@ rails generate model Forage name:string season_name:string location:string sell:
 rails generate model Fish name:string season_name:string sell:string location:string time:string weather:string difficulty:string uses:string season:references
 rails generate model Item name:string category:string
 
+ruby bin/rails generate model Recipe name:string ingredients:string healing:string buffs:string duration:string sources:string sell:string
+ruby bin/rails generate model Mineral name:string sell:string location:string uses:string
+
+# Crafting models
+ruby bin/rails generate model ArtisanEquipment name:string description:string recipe:string source:string
+ruby bin/rails generate model Bomb name:string description:string recipe:string radius:string source:string sell:string
+ruby bin/rails generate model RefiningEquipment name:string description:string recipe:string source:string
+ruby bin/rails generate model Fence name:string description:string life:string recipe:string source:string
+ruby bin/rails generate model Decor name:string description:string recipe:string source:string
+ruby bin/rails generate model Fishing name:string description:string recipe:string source:string
+ruby bin/rails generate model Furniture name:string description:string recipe:string source:string
+ruby bin/rails generate model Edible name:string description:string recipe:string energy:string health:string source:string
+ruby bin/rails generate model Lighting name:string description:string recipe:string source:string
+ruby bin/rails generate model Fertilizer name:string description:string recipe:string source:string
+ruby bin/rails generate model Consumable name:string description:string recipe:string source:string
+ruby bin/rails generate model Ring name:string description:string recipe:string source:string
+ruby bin/rails generate model Misc name:string description:string recipe:string source:string
+ruby bin/rails generate model Sprinkler name:string description:string recipe:string source:string
+ruby bin/rails generate model Seed name:string description:string recipe:string source:string

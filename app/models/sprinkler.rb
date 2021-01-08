@@ -1,0 +1,2 @@
+class Sprinkler < ApplicationRecord
+end

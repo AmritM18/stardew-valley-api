@@ -372,14 +372,14 @@ Thorns Ring,ring
 Glowstone Ring,ring
 Iridium Band,ring
 Wedding Ring,ring
-Monster Musk,fence
-Fairy Dust,fence
-Warp Totem: Beach,fence
-Warp Totem: Mountains,fence
-Warp Totem: Farm,fence
-Warp Totem: Desert,fence
-Warp Totem: Island,fence
-Rain Totem,fence
+Monster Musk,consumable
+Fairy Dust,consumable
+Warp Totem: Beach,consumable
+Warp Totem: Mountains,consumable
+Warp Totem: Farm,consumable
+Warp Totem: Desert,consumable
+Warp Totem: Island,consumable
+Rain Totem,consumable
 Torch,lighting
 Campfire,lighting
 Wooden Brazier,lighting
@@ -432,7 +432,7 @@ Cookout Kit,misc
 Recipe,crafting
 Mineral,crafting
 Edible,crafting
-Bomb,crafting
+Bombs,crafting
 Fence,crafting
 Sprinkler,crafting
 Artisan Equipment,crafting

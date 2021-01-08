@@ -1,0 +1,2 @@
+class ArtisanEquipment < ApplicationRecord
+end

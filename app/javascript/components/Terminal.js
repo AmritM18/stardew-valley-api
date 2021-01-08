@@ -91,17 +91,45 @@ class Terminal extends React.Component {
       let terminal = this.state.results;
       terminal.push("$ " + allWords);
 
+      // Check for craft or craft category commands
+      if(command[0] === "Craft" || command[0] === "Crafts") {
+        let crafts = "Crafting Categories: ";
+        this.props.craftCategories.forEach(item => {
+          crafts += item + ", ";
+        })
+        terminal.push(crafts.slice(0, -2));
+        this.setState({ results: terminal })
+        this.updateResults(this.props.index, terminal);
+        e.target.value = "";
+        return;
+      }
+      else if(this.props.craftCategories.includes(allWords)) {
+        let items = "";
+        let searchValue = allWords.toLowerCase();
+        searchValue = searchValue.replace(/\s/g, '');
+        for (let [key, value] of this.props.map.entries()) {
+          if (value === searchValue)
+            items += this.capitalize(key) + ", ";
+        }
+        terminal.push(items.slice(0, -2));
+        this.setState({ results: terminal })
+        this.updateResults(this.props.index, terminal);
+        e.target.value = "";
+        return;
+      }
+
       let category = "";
       let field = "";
-      if(this.props.map.has(allWords)) {
-        category = this.props.map.get(allWords);
+      if(this.props.map.has(allWords.toLowerCase())) {
+        category = this.props.map.get(allWords.toLowerCase());
         command[0] = allWords;
       }
       else if(command.length > 1) {
         let removeLastWord = allWords.substring(0, allWords.lastIndexOf(" "));
-        if(this.props.map.has(removeLastWord)) category = this.props.map.get(removeLastWord);
+        if(this.props.map.has(removeLastWord.toLowerCase())) category = this.props.map.get(removeLastWord.toLowerCase());
         command[0] = removeLastWord;
         field = command[command.length-1].toLowerCase();
+        if(field === "gift" || field === "gifts") field = "loves";
       }
 
       if(category === "") {
@@ -113,49 +141,74 @@ class Terminal extends React.Component {
         console.log(url)
         $.getJSON(url)
           .then(response => {
-            let keys = Object.keys(response.data[0]);
-            let values = Object.values(response.data[0]);
-            
-            // Remove name key value pair
-            const nameIndex = keys.indexOf("name");
-            keys.splice(nameIndex, 1);
-            values.splice(nameIndex, 1);
+            if(response.data.length) {
+              let keys = Object.keys(response.data[0]);
+              let values = Object.values(response.data[0]);
+              
+              // Remove name key value pair
+              const nameIndex = keys.indexOf("name");
+              keys.splice(nameIndex, 1);
+              values.splice(nameIndex, 1);
 
-            // If category given
-            if(keys.includes(field)) {
-              let index = keys.indexOf(field);
-              keys = [keys[index]];
-              values = [values[index]];
-            }
-
-            if(field === "" || keys.includes(field)) {
-              for(let i = 0; i<keys.length; i++) {
-                // If the value is an array
-                if(Array.isArray(values[i])) {
-                  // If the array is non-empty
-                  if(values[i].length !== 0) {
-                    let string = this.capitalize(keys[i]) + ": "
-                    for(let j = 0; j<values[i].length; j++) {
-                      string += values[i][j].name + ", ";
-                    }
-                    terminal.push(string.slice(0, -2));
-                  }
-                  // If the array is empty
-                  else {
-                    terminal.push(this.capitalize(keys[i]) + ": None");
+              // If more than one item is returned, concatenate values if they vary
+              // e.g. a crop might have more than one season
+              if(response.data.length > 1) {
+                console.log(values)
+                for(let i = 1; i<response.data.length; i++) {
+                  for(let j = 0; j<values.length; j++) {
+                    const key = keys[j];
+                    if(values[j] !== response.data[i][key])
+                      values[j] += ", " + response.data[i][key];
                   }
                 }
-                // Normal value given
-                else if(values[i]) terminal.push(this.capitalize(keys[i]) + ": " + values[i]);
-                // No value (e.g. null) given
-                else terminal.push(this.capitalize(keys[i]) + ": None");
               }
-            }
-            else {
-              terminal.push("No Entries Found For " + command[0] + " " + this.capitalize(field));
-            }
 
-            this.setState({ results: terminal })
+              // Change field to correct singular/plural form if applicable
+              if(keys.includes(field+"s")) field += "s";
+              else if(field.charAt(field.length-1) === "s" && keys.includes(field.slice(0,-1)))
+                field = field.slice(0,-1);
+
+              // If the field is valid, key value arrays only contain info for given field
+              if(keys.includes(field)) {
+                let index = keys.indexOf(field);
+                keys = [keys[index]];
+                values = [values[index]];
+              }
+
+              if(field === "" || keys.includes(field)) {
+                for(let i = 0; i<keys.length; i++) {
+                  // If the value is an array
+                  if(Array.isArray(values[i])) {
+                    // If the array is non-empty
+                    if(values[i].length !== 0) {
+                      let string = this.capitalize(keys[i]) + ": "
+                      for(let j = 0; j<values[i].length; j++) {
+                        string += values[i][j].name + ", ";
+                      }
+                      terminal.push(string.slice(0, -2));
+                    }
+                    // If the array is empty
+                    else {
+                      terminal.push(this.capitalize(keys[i]) + ": None");
+                    }
+                  }
+                  // Normal value given
+                  else if(values[i]) terminal.push(this.capitalize(keys[i]) + ": " + values[i]);
+                  // No value (e.g. null) given
+                  else terminal.push(this.capitalize(keys[i]) + ": None");
+                }
+              }
+              else {
+                terminal.push("No Entries Found For " + command[0] + " " + this.capitalize(field));
+              }
+
+              this.setState({ results: terminal })
+            }
+          })
+          .catch(error => {
+            console.log(error);
+            terminal.push("An error has occured. Please try again.");
+            this.setState({ results: terminal });
           })
       }
       // Clear the input field
@@ -209,6 +262,7 @@ class Terminal extends React.Component {
 
 const structuredSelector = createStructuredSelector({
   map: state => state.itemsReducer.map,
+  craftCategories: state => state.itemsReducer.craftCategories
 });
 
 const mapDispatchToProps = { updateResults, removeResults };

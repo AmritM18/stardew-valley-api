@@ -1,0 +1,2 @@
+class RefiningEquipment < ApplicationRecord
+end

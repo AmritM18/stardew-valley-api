@@ -98,3 +98,249 @@ fish.each do |row|
     puts "Added #{f.name} with season #{f.season_name}"
 end
 puts "There are now #{Fish.count} rows in the fish table"
+
+mineral_info = File.read(Rails.root.join('lib', 'seeds', 'MineralData.csv'))
+mineral = CSV.parse(mineral_info, :headers => true, :encoding => 'ISO-8859-1')
+
+mineral.each do |row|
+    f = Mineral.new
+    f.name = row['Name']
+    f.sell = row['Sell']
+    f.location = row['Location']
+    f.uses = row['Uses']
+    f.save
+    puts "Added #{f.name} with location #{f.location}"
+end
+puts "There are now #{Mineral.count} rows in the mineral table"
+
+recipe_info = File.read(Rails.root.join('lib', 'seeds', 'RecipeData.csv'))
+recipe = CSV.parse(recipe_info, :headers => true, :encoding => 'ISO-8859-1')
+
+recipe.each do |row|
+    f = Recipe.new
+    f.name = row['Name']
+    f.ingredients = row['Ingredients']
+    f.healing = row['Healing']
+    f.buffs = row['Buffs']
+    f.duration = row['Duration']
+    f.sources = row['Sources']
+    f.sell = row['Sell']
+    f.save
+    puts "Added #{f.name} with ingredients #{f.ingredients}"
+end
+puts "There are now #{Recipe.count} rows in the recipe table"
+
+artisanequipment_info = File.read(Rails.root.join('lib', 'seeds', 'Crafting_ArtisanEquipmentData.csv'))
+artisanequipment = CSV.parse(artisanequipment_info, :headers => true, :encoding => 'ISO-8859-1')
+
+artisanequipment.each do |row|
+    f = ArtisanEquipment.new
+    f.name = row['Name']
+    f.description = row['Description']
+    f.recipe = row['Recipe']
+    f.source = row['Source']
+    f.save
+    puts "Added #{f.name} with description #{f.description}"
+end
+puts "There are now #{ArtisanEquipment.count} rows in the artisanequipment table"
+
+bomb_info = File.read(Rails.root.join('lib', 'seeds', 'Crafting_BombsData.csv'))
+bomb = CSV.parse(bomb_info, :headers => true, :encoding => 'ISO-8859-1')
+
+bomb.each do |row|
+    f = Bomb.new
+    f.name = row['Name']
+    f.description = row['Description']
+    f.recipe = row['Recipe']
+    f.radius = row['Radius']
+    f.source = row['Source']
+    f.sell = row['Sell']
+    f.save
+    puts "Added #{f.name} with description #{f.description}"
+end
+puts "There are now #{Bomb.count} rows in the bomb table"
+
+seed_info = File.read(Rails.root.join('lib', 'seeds', 'Crafting_SeedData.csv'))
+seed = CSV.parse(seed_info, :headers => true, :encoding => 'ISO-8859-1')
+
+seed.each do |row|
+    f = Seed.new
+    f.name = row['Name']
+    f.description = row['Description']
+    f.recipe = row['Recipe']
+    f.source = row['Source']
+    f.save
+    puts "Added #{f.name} with description #{f.description}"
+end
+puts "There are now #{Seed.count} rows in the seed table"
+
+sprinkler_info = File.read(Rails.root.join('lib', 'seeds', 'Crafting_SprinklerData.csv'))
+sprinkler = CSV.parse(sprinkler_info, :headers => true, :encoding => 'ISO-8859-1')
+
+sprinkler.each do |row|
+    f = Sprinkler.new
+    f.name = row['Name']
+    f.description = row['Description']
+    f.recipe = row['Recipe']
+    f.source = row['Source']
+    f.save
+    puts "Added #{f.name} with description #{f.description}"
+end
+puts "There are now #{Sprinkler.count} rows in the sprinkler table"
+
+misc_info = File.read(Rails.root.join('lib', 'seeds', 'Crafting_MiscData.csv'))
+misc = CSV.parse(misc_info, :headers => true, :encoding => 'ISO-8859-1')
+
+misc.each do |row|
+    f = Misc.new
+    f.name = row['Name']
+    f.description = row['Description']
+    f.recipe = row['Recipe']
+    f.source = row['Source']
+    f.save
+    puts "Added #{f.name} with description #{f.description}"
+end
+puts "There are now #{Misc.count} rows in the misc table"
+
+ring_info = File.read(Rails.root.join('lib', 'seeds', 'Crafting_RingsData.csv'))
+ring = CSV.parse(ring_info, :headers => true, :encoding => 'ISO-8859-1')
+
+ring.each do |row|
+    f = Ring.new
+    f.name = row['Name']
+    f.description = row['Description']
+    f.recipe = row['Recipe']
+    f.source = row['Source']
+    f.save
+    puts "Added #{f.name} with description #{f.description}"
+end
+puts "There are now #{Ring.count} rows in the ring table"
+
+refiningequipment_info = File.read(Rails.root.join('lib', 'seeds', 'Crafting_RefiningEquipmentData.csv'))
+refiningequipment = CSV.parse(refiningequipment_info, :headers => true, :encoding => 'ISO-8859-1')
+
+refiningequipment.each do |row|
+    f = RefiningEquipment.new
+    f.name = row['Name']
+    f.description = row['Description']
+    f.recipe = row['Recipe']
+    f.source = row['Source']
+    f.save
+    puts "Added #{f.name} with description #{f.description}"
+end
+puts "There are now #{RefiningEquipment.count} rows in the refiningequipment table"
+
+lighting_info = File.read(Rails.root.join('lib', 'seeds', 'Crafting_LightingData.csv'))
+lighting = CSV.parse(lighting_info, :headers => true, :encoding => 'ISO-8859-1')
+
+lighting.each do |row|
+    f = Lighting.new
+    f.name = row['Name']
+    f.description = row['Description']
+    f.recipe = row['Recipe']
+    f.source = row['Source']
+    f.save
+    puts "Added #{f.name} with description #{f.description}"
+end
+puts "There are now #{Lighting.count} rows in the lighting table"
+
+fertilizer_info = File.read(Rails.root.join('lib', 'seeds', 'Crafting_FertilizerData.csv'))
+fertilizer = CSV.parse(fertilizer_info, :headers => true, :encoding => 'ISO-8859-1')
+
+fertilizer.each do |row|
+    f = Fertilizer.new
+    f.name = row['Name']
+    f.description = row['Description']
+    f.recipe = row['Recipe']
+    f.source = row['Source']
+    f.save
+    puts "Added #{f.name} with description #{f.description}"
+end
+puts "There are now #{Fertilizer.count} rows in the fertilizer table"
+
+furniture_info = File.read(Rails.root.join('lib', 'seeds', 'Crafting_FurnitureData.csv'))
+furniture = CSV.parse(furniture_info, :headers => true, :encoding => 'ISO-8859-1')
+
+furniture.each do |row|
+    f = Furniture.new
+    f.name = row['Name']
+    f.description = row['Description']
+    f.recipe = row['Recipe']
+    f.source = row['Source']
+    f.save
+    puts "Added #{f.name} with description #{f.description}"
+end
+puts "There are now #{Furniture.count} rows in the furniture table"
+
+fishing_info = File.read(Rails.root.join('lib', 'seeds', 'Crafting_FishingData.csv'))
+fishing = CSV.parse(fishing_info, :headers => true, :encoding => 'ISO-8859-1')
+
+fishing.each do |row|
+    f = Fishing.new
+    f.name = row['Name']
+    f.description = row['Description']
+    f.recipe = row['Recipe']
+    f.source = row['Source']
+    f.save
+    puts "Added #{f.name} with description #{f.description}"
+end
+puts "There are now #{Fishing.count} rows in the fishing table"
+
+consumable_info = File.read(Rails.root.join('lib', 'seeds', 'Crafting_ConsumableData.csv'))
+consumable = CSV.parse(consumable_info, :headers => true, :encoding => 'ISO-8859-1')
+
+consumable.each do |row|
+    f = Consumable.new
+    f.name = row['Name']
+    f.description = row['Description']
+    f.recipe = row['Recipe']
+    f.source = row['Source']
+    f.save
+    puts "Added #{f.name} with description #{f.description}"
+end
+puts "There are now #{Consumable.count} rows in the consumable table"
+
+fence_info = File.read(Rails.root.join('lib', 'seeds', 'Crafting_FencesData.csv'))
+fence = CSV.parse(fence_info, :headers => true, :encoding => 'ISO-8859-1')
+
+fence.each do |row|
+    f = Fence.new
+    f.name = row['Name']
+    f.description = row['Description']
+    f.life = row['Life']
+    f.recipe = row['Recipe']
+    f.source = row['Source']
+    f.save
+    puts "Added #{f.name} with description #{f.description}"
+end
+puts "There are now #{Fence.count} rows in the fence table"
+
+edible_info = File.read(Rails.root.join('lib', 'seeds', 'Crafting_EdibleData.csv'))
+edible = CSV.parse(edible_info, :headers => true, :encoding => 'ISO-8859-1')
+
+edible.each do |row|
+    f = Edible.new
+    f.name = row['Name']
+    f.description = row['Description']
+    f.recipe = row['Recipe']
+    f.energy = row['Energy']
+    f.health = row['Health']
+    f.source = row['Source']
+    f.save
+    puts "Added #{f.name} with description #{f.description}"
+end
+puts "There are now #{Edible.count} rows in the edible table"
+
+decor_info = File.read(Rails.root.join('lib', 'seeds', 'Crafting_DecorData.csv'))
+decor = CSV.parse(decor_info, :headers => true, :encoding => 'ISO-8859-1')
+
+decor.each do |row|
+    f = Decor.new
+    f.name = row['Name']
+    f.description = row['Description']
+    f.recipe = row['Recipe']
+    f.source = row['Source']
+    f.save
+    puts "Added #{f.name} with description #{f.description}"
+end
+puts "There are now #{Decor.count} rows in the decor table"
