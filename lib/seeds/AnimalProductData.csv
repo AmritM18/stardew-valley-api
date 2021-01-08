@@ -1,0 +1,15 @@
+Name,Sell,Animal,Cost,Requirement
+Egg,"50g, 62g, 75g, 100g",Chicken,800g,
+Large Egg,"95g, 118g, 142g, 190g",Chicken,800g,
+Void Egg,"65g, 81g, 97g, 130g",Void Chicken,n/a,
+Duck Egg,"95g, 118g, 142g, 190g",Duck,"1,200g",Big Coop
+Duck Feather,"250g, 312g, 375g, 500g",Duck,"1,200g",Big Coop
+Wool,"340g, 425g, 510g, 680g",Rabbit,"8,000g",Deluxe Coop
+Rabbit's Foot,"565g, 706g, 847g, 1130g",Rabbit,"8,000g",Deluxe Coop
+Dinosaur Egg,"350g, 437g, 525g, 700g",Dinosaur,n/a,Big Coop
+Milk,"125g, 156g, 187g, 250g",Cow,"1,500g",
+Large Milk,"190g, 237g, 285g, 380g",Cow,"1,500g",
+Goat Milk,"225g, 281g, 337g, 450g",Goat,"4,000g",Big Barn
+Large Goat Milk,"345g, 431g, 517g, 690g",Goat,"4,000g",Big Barn
+Wool,"340g, 425g, 510g, 680g",Sheep,"8,000g",Deluxe Barn
+Truffle,"625g, 781g, 937g, 1250g",Pig,"16,000g",Deluxe Barn

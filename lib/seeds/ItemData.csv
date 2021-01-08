@@ -304,9 +304,9 @@ Field Snack,edible
 Bug Steak,edible
 Life Elixir,edible
 Oil of Garlic,edible
-Cherry Bomb,bomb
-Bomb,bomb
-Mega Bomb,bomb
+Cherry Bomb,bombs
+Bomb,bombs
+Mega Bomb,bombs
 Gate,fence
 Wood Fence,fence
 Stone Fence,fence
@@ -446,3 +446,37 @@ Lighting,crafting
 Refining Equipment,crafting
 Furniture,crafting
 Misc,crafting
+Cheese,artisangood
+Goat Cheese,artisangood
+Beer,artisangood
+Coffee,artisangood
+Green Tea,artisangood
+Juice,artisangood
+Mead,artisangood
+Pale Ale,artisangood
+Wine,artisangood
+Wine,artisangood
+Mayonnaise,artisangood
+Duck Mayonnaise,artisangood
+Void Mayonnaise,artisangood
+Dinosaur Mayonnaise,artisangood
+Truffle Oil,artisangood
+Oil,artisangood
+Pickles,artisangood
+Jelly,artisangood
+Caviar,artisangood
+Aged Roe,artisangood
+Egg,animalproduct
+Large Egg,animalproduct
+Void Egg,animalproduct
+Duck Egg,animalproduct
+Duck Feather,animalproduct
+Wool,animalproduct
+Rabbit's Foot,animalproduct
+Dinosaur Egg,animalproduct
+Milk,animalproduct
+Large Milk,animalproduct
+Goat Milk,animalproduct
+Large Goat Milk,animalproduct
+Wool,animalproduct
+Truffle,animalproduct

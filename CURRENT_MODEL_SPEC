@@ -37,3 +37,9 @@ ruby bin/rails generate model Ring name:string description:string recipe:string 
 ruby bin/rails generate model Misc name:string description:string recipe:string source:string
 ruby bin/rails generate model Sprinkler name:string description:string recipe:string source:string
 ruby bin/rails generate model Seed name:string description:string recipe:string source:string
+
+# Artisan model
+rails generate model ArtisanGood name:string recipe:string time:string sell:string equipment:string
+
+# Animal product model
+rails generate model AnimalProduct name:string sell:string animal:string cost:string requirement:string
