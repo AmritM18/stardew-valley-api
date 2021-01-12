@@ -1,1 +1,184 @@
-<%= react_component("Help") %>
+<%= stylesheet_link_tag "home" %>
+
+<div class="help-container">
+    <div class="help-title">Stardew Valley API Help</div>
+    <div class="help-subtitle">Contents</div>
+    <ol>
+    <li><a href="#general">General Commands</a></li>
+    <li><a href="#villager">Villager Commands</a></li>
+    <li><a href="#season">Season Commands</a>
+        <ol>
+            <li><a href="#crop">Crop</a></li>
+            <li><a href="#forage">Forage</a></li>
+            <li><a href="#fish">Fish</a></li>
+        </ol>
+    </li>
+    <li><a href="#crafting">Crafting Commands</a>
+        <ol>
+            <li><a href="#artisan-equipment">Artisan Equipment</a></li>
+            <li><a href="#bombs">Bombs</a></li>
+            <li><a href="#consumables">Consumables</a></li>
+            <li><a href="#decor">Decor</a></li>
+            <li><a href="#edibles">Edibles</a></li>
+            <li><a href="#fences">Fences</a></li>
+            <li><a href="#fertilizers">Fertilizers</a></li>
+            <li><a href="#fishing">Fishing</a></li>
+            <li><a href="#furniture">Furniture</a></li>
+            <li><a href="#lighting">Lighting</a></li>
+            <li><a href="#misc">Misc</a></li>
+            <li><a href="#refining-equipment">Refining Equipment</a></li>
+            <li><a href="#rings">Rings</a></li>
+            <li><a href="#seeds">Seeds</a></li>
+            <li><a href="#sprinklers">Sprinklers</a></li>
+        </ol>
+    </li>
+    <li><a href="#artisangoods">Artisan Goods Commands</a></li>
+    <li><a href="#animalproducts">Animal Products Commands</a></li>
+    <li><a href="#minerals">Minerals</a></li>
+    <li><a href="#recipe">Recipe</a></li>
+    </ol>
+
+    <div id="general" class="help-subtitle">General Commands</div>
+    <table class="help-table">
+    <tr>
+        <td>Clear</td>
+        <td>Does some stuff...</td>
+    </tr>
+    <tr>
+        <td>Pop</td>
+        <td>Does some stuff...</td>
+    </tr>
+    <tr>
+        <td>New</td>
+        <td>Does some stuff...</td>
+    </tr>
+    <tr>
+        <td>Exit</td>
+        <td>Does some stuff...</td>
+    </tr>
+    </table>
+
+    <div id="villager" class="help-subtitle">Villager Commands</div>
+    <div class="help-command">
+    [Villager Name] [Birthday, Loves, Likes, Neutral, Dislikes, Hates (optional)]
+    </div>
+
+    <div id="season" class="help-subtitle">Season Commands</div>
+    <div class="help-command">
+        [Season] [Crop, Forage, Fish (optional)] - Lists selected info for the season
+    </div>
+        <div id="crop" class="help-subtitle nested">Crop</div>
+        <div class="help-command nested">
+            [Crop Name] [Season, Buy, Sell, Growth, Healing (optional)]
+        </div>
+        <div id="forage" class="help-subtitle nested">Forage</div>
+        <div class="help-command nested">
+            [Forage Name] [Season, Buy, Sell, Growth, Healing (optional)]
+        </div>
+        <div id="fish" class="help-subtitle nested">Fish</div>
+        <div class="help-command nested">
+            [Fish Name] [Season, Buy, Sell, Growth, Healing (optional)]
+        </div>
+
+    <div id="crafting" class="help-subtitle">Crafting Commands</div>
+    <div class="help-command">
+        [Craft] - Lists all crafting categories
+    </div>
+        <div id="artisan-equipment" class="help-subtitle nested">Artisan Equipment</div>
+        <div class="help-command nested">
+            [Artisan Equipment] - Lists all artisan equipment names<br>
+            [Artisan Equipment Name] [Description, Recipe, Source (optional)]
+        </div>
+        <div id="bombs" class="help-subtitle nested">Bombs</div>
+        <div class="help-command nested">
+            [Bombs] - Lists all bomb names<br>
+            [Bomb Name] [Description, Recipe, Source (optional)]
+        </div>
+        <div id="consumables" class="help-subtitle nested">Consumables</div>
+        <div class="help-command nested">
+            [Consumables] - Lists all bomb names<br>
+            [Consumable Name] [Description, Recipe, Source (optional)]
+        </div>
+        <div id="decor" class="help-subtitle nested">Decor</div>
+        <div class="help-command nested">
+            [Decor] - Lists all bomb names<br>
+            [Decor Name] [Description, Recipe, Source (optional)]
+        </div>
+        <div id="edibles" class="help-subtitle nested">Edibles</div>
+        <div class="help-command nested">
+            [Edible] - Lists all bomb names<br>
+            [Edible Name] [Description, Recipe, Source (optional)]
+        </div>
+        <div id="fences" class="help-subtitle nested">Fences</div>
+        <div class="help-command nested">
+            [Fences] - Lists all bomb names<br>
+            [Fence Name] [Description, Recipe, Source (optional)]
+        </div>
+        <div id="fertilizers" class="help-subtitle nested">Fertilizers</div>
+        <div class="help-command nested">
+            [Fertilizers] - Lists all bomb names<br>
+            [Fertilizer Name] [Description, Recipe, Source (optional)]
+        </div>
+        <div id="fishing" class="help-subtitle nested">Fishing</div>
+        <div class="help-command nested">
+            [Fishing] - Lists all bomb names<br>
+            [Fishing Name] [Description, Recipe, Source (optional)]
+        </div>
+        <div id="furniture" class="help-subtitle nested">Furniture</div>
+        <div class="help-command nested">
+            [Furniture] - Lists all bomb names<br>
+            [Furniture Name] [Description, Recipe, Source (optional)]
+        </div>
+        <div id="lighting" class="help-subtitle nested">Lighting</div>
+        <div class="help-command nested">
+            [Lighting] - Lists all lighting items<br>
+            [Lighting Name] [Description, Recipe, Source (optional)]
+        </div>
+        <div id="misc" class="help-subtitle nested">Misc</div>
+        <div class="help-command nested">
+            [Misc] - Lists all misc items<br>
+            [Misc Name] [Description, Recipe, Source (optional)]
+        </div>
+        <div id="refining-equipment" class="help-subtitle nested">Refining Equipment</div>
+        <div class="help-command nested">
+            [Refining Equipment] - Lists all refining equipment<br>
+            [Refining Equipment Name] [Description, Recipe, Source (optional)]
+        </div>
+        <div id="rings" class="help-subtitle nested">Rings</div>
+        <div class="help-command nested">
+            [Ring] - Lists all rings<br>
+            [Ring Name] [Description, Recipe, Source (optional)]
+        </div>
+        <div id="seeds" class="help-subtitle nested">Seeds</div>
+        <div class="help-command nested">
+            [Seed] - Lists all bomb names<br>
+            [Seed Name] [Description, Recipe, Source (optional)]
+        </div>
+        <div id="sprinklers" class="help-subtitle nested">Sprinklers</div>
+        <div class="help-command nested">
+            [Sprinkler] - Lists all bomb names<br>
+            [Sprinkler Name] [Description, Recipe, Source (optional)]
+        </div>
+
+    <div id="artisangoods" class="help-subtitle">Artisan Goods</div>
+    <div class="help-command">
+        [Artisan Goods] - Lists all bomb names<br>
+        [Artisan Good Name] [Recipe, Time, Sell, Equipment (optional)]
+    </div>
+    <div id="animalproducts" class="help-subtitle">Animal Products</div>
+    <div class="help-command">
+        [Animal Products] - Lists all bomb names<br>
+        [Artisan Good Name] [Recipe, Time, Sell, Equipment (optional)]
+    </div>
+    <div id="minerals" class="help-subtitle">Minerals</div>
+    <div class="help-command">
+        [Artisan Goods] - Lists all bomb names<br>
+        [Artisan Good Name] [Recipe, Time, Sell, Equipment (optional)]
+    </div>
+    <div id="recipe" class="help-subtitle">Recipes</div>
+    <div class="help-command">
+        [Artisan Goods] - Lists all bomb names<br>
+        [Artisan Good Name] [Recipe, Time, Sell, Equipment (optional)]
+    </div>
+
+</div>

@@ -1,3 +1,4 @@
+// No craft model so we need craftCategories and map
 const initialState = {
     map: new Map(),
     craftCategories: []
