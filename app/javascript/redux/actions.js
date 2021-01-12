@@ -8,18 +8,18 @@ export function getItems() {
 
 export function getItemsSuccess(type, json) {
     return {
-        type: type, json
+        type, json
     };
 };
 
 export function updateResults(index, terminal) {
     return {
-        type: 'update', index: index, terminal
+        type: 'update', index, terminal
     }
 }
 
 export function removeResults(index) {
     return {
-        type: 'remove', index: index
+        type: 'remove', index
     }
 }

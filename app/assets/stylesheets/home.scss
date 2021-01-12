@@ -1,3 +1,57 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+/***************** Help Page Styling ***************************/
+.help-container {
+    margin: 30px 45px;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.help-title {
+    font-size: 18px;
+    color: #353C4A;
+    text-align: center;
+}
+
+.help-subtitle {
+    font-size: 16px;
+    color: #353C4A;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.nested {
+    margin-left: 20px
+}
+
+.help-container ol {
+    margin: 0;
+}
+
+.help-container li, .help-container a:link, .help-container a:visited {
+    font-size: 14px;
+    color: #7E8DDC;
+}
+
+.help-container li {
+    padding-bottom: 10px;
+}
+
+.help-table {
+    font-size: 14px;
+}
+
+.help-table td:first-child {
+    color: #353C4A;
+}
+
+.help-table td:nth-child(2) {
+    color: #737B89;
+    padding-left: 15px;
+}
+
+.help-command {
+    font-size: 14px;
+    color: #353C4A;
+}

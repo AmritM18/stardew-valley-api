@@ -69,7 +69,7 @@ class Terminal extends React.Component {
           e.target.value = "";
           return;
         }
-        else if(command[0] === "Remove") {
+        else if(command[0] === "Pop") {
           let newResults = this.state.results;
           let popped = newResults.pop();
           while(popped.charAt(0) !== '$') {
@@ -141,7 +141,7 @@ class Terminal extends React.Component {
         console.log(url)
         $.getJSON(url)
           .then(response => {
-            if(response.data.length) {
+            if(response.data && response.data.length) {
               let keys = Object.keys(response.data[0]);
               let values = Object.values(response.data[0]);
               

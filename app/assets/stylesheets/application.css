@@ -4,57 +4,6 @@
     margin: 0;
 }
 
-/***************** Help Page Styling ***************************/
-.help-container {
-    margin: 30px 45px;
-    font-family: 'IBM Plex Mono', monospace;
-}
-
-.help-title {
-    font-size: 18px;
-    color: #353C4A;
-    text-align: center;
-}
-
-.help-subtitle {
-    font-size: 16px;
-    color: #353C4A;
-    margin-top: 25px;
-    margin-bottom: 10px;
-}
-
-.help-container ol {
-    margin: 0;
-}
-
-.help-container li, .help-container a:link, .help-container a:visited {
-    font-size: 14px;
-    color: #7E8DDC;
-}
-
-.help-container li {
-    padding-bottom: 10px;
-}
-
-.help-table {
-    font-size: 14px;
-}
-
-.help-table td:first-child {
-    color: #353C4A;
-}
-
-.help-table td:nth-child(2) {
-    color: #737B89;
-    padding-left: 15px;
-}
-
-.help-command {
-    font-size: 14px;
-    color: #353C4A;
-}
-
-
 /***************** Terminal Styling ****************************/
 .container-flex {
     background-color: #6670A6;
@@ -86,6 +35,7 @@
     -moz-user-select: none; 
     -ms-user-select: none;
     user-select: none;
+    border-radius: 7px 7px 0px 0px;
 }
 
 .terminal-header-1, .terminal-header-2 {
@@ -190,6 +140,7 @@
 
 .terminal-input-container {
     background-color: #262A33;
+    border-radius: 0px 0px 7px 7px;
 }
 
 .terminal-input {
