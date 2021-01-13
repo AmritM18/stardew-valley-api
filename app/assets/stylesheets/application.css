@@ -35,7 +35,7 @@
     -moz-user-select: none; 
     -ms-user-select: none;
     user-select: none;
-    border-radius: 7px 7px 0px 0px;
+    border-radius: 4px 4px 0px 0px;
 }
 
 .terminal-header-1, .terminal-header-2 {
@@ -140,7 +140,7 @@
 
 .terminal-input-container {
     background-color: #262A33;
-    border-radius: 0px 0px 7px 7px;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .terminal-input {

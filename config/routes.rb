@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
   get :mineral, controller: :main
   get :recipe, controller: :main
+  get :artisangood, controller: :main
+  get :animalproduct, controller: :main
 
   get :artisanequipment, controller: :main
   get :bomb, controller: :main

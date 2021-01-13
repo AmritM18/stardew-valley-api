@@ -103,7 +103,13 @@ class Terminal extends React.Component {
         e.target.value = "";
         return;
       }
-      else if(this.props.craftCategories.includes(allWords)) {
+
+      // Catches extra "s" added to craft categories
+      if(allWords[allWords.length-1] === "s" && this.props.craftCategories.includes(allWords.slice(0,-1))) {
+        allWords = allWords.slice(0,-1);
+      }
+
+      if(this.props.craftCategories.includes(allWords)) {
         let items = "";
         let searchValue = allWords.toLowerCase();
         searchValue = searchValue.replace(/\s/g, '');
@@ -137,6 +143,7 @@ class Terminal extends React.Component {
         this.setState({ results: terminal });
       }
       else {
+        if(category === "bombs") category = "bomb";
         let url = "/" + category + "?q=" + command[0].replace(" ", "+");
         console.log(url)
         $.getJSON(url)

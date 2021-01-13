@@ -36,6 +36,14 @@ class MainController < ApplicationController
     @data = Recipe.ransack(name_start: params[:q]).result(distinct: true)
   end
 
+  def artisangood
+    @data = ArtisanGood.ransack(name_start: params[:q]).result(distinct: true)
+  end
+
+  def animalproduct
+    @data = AnimalProduct.ransack(name_start: params[:q]).result(distinct: true)
+  end
+
   def artisanequipment
     @data = ArtisanEquipment.ransack(name_start: params[:q]).result(distinct: true)
   end

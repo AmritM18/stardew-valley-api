@@ -2,183 +2,279 @@
 
 <div class="help-container">
     <div class="help-title">Stardew Valley API Help</div>
-    <div class="help-subtitle">Contents</div>
-    <ol>
-    <li><a href="#general">General Commands</a></li>
-    <li><a href="#villager">Villager Commands</a></li>
-    <li><a href="#season">Season Commands</a>
-        <ol>
-            <li><a href="#crop">Crop</a></li>
-            <li><a href="#forage">Forage</a></li>
-            <li><a href="#fish">Fish</a></li>
-        </ol>
-    </li>
-    <li><a href="#crafting">Crafting Commands</a>
-        <ol>
-            <li><a href="#artisan-equipment">Artisan Equipment</a></li>
-            <li><a href="#bombs">Bombs</a></li>
-            <li><a href="#consumables">Consumables</a></li>
-            <li><a href="#decor">Decor</a></li>
-            <li><a href="#edibles">Edibles</a></li>
-            <li><a href="#fences">Fences</a></li>
-            <li><a href="#fertilizers">Fertilizers</a></li>
-            <li><a href="#fishing">Fishing</a></li>
-            <li><a href="#furniture">Furniture</a></li>
-            <li><a href="#lighting">Lighting</a></li>
-            <li><a href="#misc">Misc</a></li>
-            <li><a href="#refining-equipment">Refining Equipment</a></li>
-            <li><a href="#rings">Rings</a></li>
-            <li><a href="#seeds">Seeds</a></li>
-            <li><a href="#sprinklers">Sprinklers</a></li>
-        </ol>
-    </li>
-    <li><a href="#artisangoods">Artisan Goods Commands</a></li>
-    <li><a href="#animalproducts">Animal Products Commands</a></li>
-    <li><a href="#minerals">Minerals</a></li>
-    <li><a href="#recipe">Recipe</a></li>
+    <div class="help-subtitle" id="contents">Contents</div>
+    <ol id="contents">
+        <li><a href="#general">General Commands</a></li>
+        <li><a href="#villager">Villager Commands</a></li>
+        <li id="seasons"><a href="#season">Season Commands</a><br><br>
+            <ol>
+                <li><a href="#crop">Crop</a></li>
+                <li><a href="#forage">Forage</a></li>
+                <li><a href="#fish">Fish</a></li>
+            </ol>
+        </li>
+        <li><a href="#minerals">Mineral Commands</a></li>
+        <li><a href="#recipe">Recipe Commands</a></li>
+        <li><a href="#artisangoods">Artisan Goods Commands</a></li>
+        <li><a href="#animalproducts">Animal Products Commands</a></li>
+        <li><a href="#crafting">Crafting Commands</a><br><br>
+            <ol>
+                <li><a href="#artisan-equipment">Artisan Equipment</a></li>
+                <li><a href="#bombs">Bombs</a></li>
+                <!-- <li><a href="#consumables">Consumables</a></li> -->
+                <li><a href="#decor">Decor</a></li>
+                <li><a href="#edibles">Edibles</a></li>
+                <li><a href="#fences">Fences</a></li>
+                <li><a href="#fertilizers">Fertilizers</a></li>
+                <li><a href="#fishing">Fishing</a></li>
+                <li><a href="#furniture">Furniture</a></li>
+                <li><a href="#lighting">Lighting</a></li>
+                <li><a href="#misc">Misc</a></li>
+                <li><a href="#refining-equipment">Refining Equipment</a></li>
+                <li><a href="#rings">Rings</a></li>
+                <li><a href="#seeds">Seeds</a></li>
+                <li><a href="#sprinklers">Sprinklers</a></li>
+            </ol>
+        </li>
     </ol>
 
     <div id="general" class="help-subtitle">General Commands</div>
     <table class="help-table">
     <tr>
         <td>Clear</td>
-        <td>Does some stuff...</td>
+        <td>Clears the terminal's contents</td>
     </tr>
     <tr>
         <td>Pop</td>
-        <td>Does some stuff...</td>
+        <td>Removes the last query from the terminal</td>
     </tr>
     <tr>
         <td>New</td>
-        <td>Does some stuff...</td>
+        <td>Add a new terminal</td>
     </tr>
     <tr>
         <td>Exit</td>
-        <td>Does some stuff...</td>
+        <td>Close the current terminal</td>
     </tr>
     </table>
 
     <div id="villager" class="help-subtitle">Villager Commands</div>
     <div class="help-command">
-    [Villager Name] [Birthday, Loves, Likes, Neutral, Dislikes, Hates (optional)]
+        [Villager Name] [Birthday, Loves, Likes, Neutral, Dislikes, Hates (optional)]<br><br>
+        Examples:<br><br>
+        <div class="help-example">
+            $ Elliott<br>
+            Birthday: Fall 05<br>
+            Loves: Crab Cakes, Duck Feather, Lobster, Pomegranate, Squid Ink, Tom Kha Soup<br>
+            Likes: All Fruit (except Pomegranate & Salmonberry), Octopus, Squid<br>
+            Neutral: All Eggs (except Void Egg),All Fish (except Carp, Lobster, Octopus, Sea Cucumber, Snails & Squid)<br>
+            Dislikes: All Milk,All Mushrooms (except Red), Daffodil, Dandelion, Ginger, Hazelnut, Holly, Leek, Pizza, Snow Yam, Wild Horseradish, Winter Root<br>
+            Hates: Amaranth, Quartz, Salmonberry, Sea Cucumber<br><br>
+            $ Elliott Birthday<br>
+            Birthday: Fall 5<br>
+        </div>
     </div>
 
     <div id="season" class="help-subtitle">Season Commands</div>
     <div class="help-command">
-        [Season] [Crop, Forage, Fish (optional)] - Lists selected info for the season
+        [Season] [Crop, Forage, Fish (optional)] - Lists selected info for the season<br><br>
+        Examples:<br><br>
+        <div class="help-example">
+            $ Summer
+            Crops: Melon, Poppy, Radish, Red Cabbage, Starfruit, Summer Spangle, Sunflower, Wheat, Blueberry, Coffee Bean, Corn, Hops, Hot Pepper, Tomato<br>
+            Forages: Spice Berry, Grape, Sweet Pea, Red Mushroom, Fiddlehead Fern, Common Mushroom<br>
+            Fish: Pufferfish, Tuna, Rainbow Trout, Catfish, Pike, Sunfish, Red Mullet, Octopus, Red Snapper, Super Cucumber, Sturgeon, Tilapia, Dorado, Flounder, Shad, Halibut, Crimsonfish<br><br>
+            $ Summer Crop<br>
+            Crops: Melon, Poppy, Radish, Red Cabbage, Starfruit, Summer Spangle, Sunflower, Wheat, Blueberry, Coffee Bean, Corn, Hops, Hot Pepper, Tomato<br>
+        </div>
     </div>
         <div id="crop" class="help-subtitle nested">Crop</div>
         <div class="help-command nested">
-            [Crop Name] [Season, Buy, Sell, Growth, Healing (optional)]
+            [Crop Name] [Season, Buy, Sell, Growth, Healing (optional)]<br><br>
+            Example:<br><br>
+            <div class="help-example">
+                $ Melon Sell<br>
+                Sell: 250g 312g 375g
+            </div>
         </div>
         <div id="forage" class="help-subtitle nested">Forage</div>
         <div class="help-command nested">
-            [Forage Name] [Season, Buy, Sell, Growth, Healing (optional)]
+            [Forage Name] [Season, Sell, Location, Uses (optional)]<br><br>
+            Example:<br><br>
+            <div class="help-example">
+                $ Fiddlehead Fern Uses<br>
+                Uses: Fiddlehead Risotto, Chef's Bundle, Pickles, Juice
+            </div>
         </div>
         <div id="fish" class="help-subtitle nested">Fish</div>
         <div class="help-command nested">
-            [Fish Name] [Season, Buy, Sell, Growth, Healing (optional)]
+            [Fish Name] [Season, Sell, Location, Time, Weather, Difficulty, Uses (optional)]<br><br>
+            Example:<br><br>
+            <div class="help-example">
+                $ Tuna Location<br>
+                Location: Ocean
+            </div>
         </div>
 
+    <div id="minerals" class="help-subtitle">Minerals</div>
+    <div class="help-command">
+        [Mineral Name] [Sell, Location, Uses (optional)]<br><br>
+        Examples:<br><br>
+        <div class="help-example">
+            $ Marble<br>
+            Sell: 110g<br>
+            Location: Frozen Geode, Omni Geode<br>
+            Uses: Marble Brazier<br><br>
+            $ Fairy Stone Sell<br>
+            Sell: 250g
+        </div>
+    </div>
+    <div id="recipe" class="help-subtitle">Recipes</div>
+    <div class="help-command">
+        [Recipe Name] [Ingredients, Healing, Buffs, Duration, Sources, Sell (optional)]<br><br>
+        Examples:<br><br>
+        <div class="help-example">
+            $ Survival Burger<br>
+            Ingredients: Bread(1), Cave Carrot(1), Eggplant(1)<br>
+            Healing: 125 Energy, 56 Health<br>
+            Buffs: Foraging(+3)<br>
+            Duration: 5m 35s<br>
+            Sources: Foraging Level 2<br>
+            Sell: 180g<br><br>
+            $ Rhubarb Pie Ingredients<br>
+            Ingredients: Rhubarb(1), Wheat Flour(1), Sugar(1)
+        </div>
+    </div>
+    <div id="artisangoods" class="help-subtitle">Artisan Goods</div>
+    <div class="help-command">
+        [Artisan Good Name] [Recipe, Time, Sell, Equipment (optional)]<br><br>
+        Examples:<br><br>
+        <div class="help-example">
+            $ Aged Roe<br>
+            Recipe: Roe(1)<br>
+            Time: 4000m (2-3 days)<br>
+            Sell: 2 × base Roe sell price<br>
+            Equipment: Preserves Jar<br><br>
+            $ Void Mayonnaise Recipe<br>
+            Recipe: Void Egg(1)
+        </div>
+    </div>
+    <div id="animalproducts" class="help-subtitle">Animal Products</div>
+    <div class="help-command">
+        [Animal Product Name] [Sell, Animal, Cost, Requirement (optional)]<br><br>
+        Examples:<br><br>
+        <div class="help-example">
+            $ Duck Feather<br>
+            Sell: 250g, 312g, 375g, 500g<br>
+            Animal: Duck<br>
+            Cost: 1,200g<br>
+            Requirement: Big Coop<br><br>
+            $ Wool Animal<br>
+            Animal: Rabbit, Sheep
+        </div>
+    </div>
+    
     <div id="crafting" class="help-subtitle">Crafting Commands</div>
     <div class="help-command">
-        [Craft] - Lists all crafting categories
+        Craft - Lists all crafting categories
     </div>
         <div id="artisan-equipment" class="help-subtitle nested">Artisan Equipment</div>
         <div class="help-command nested">
-            [Artisan Equipment] - Lists all artisan equipment names<br>
+            Artisan Equipment - Lists all artisan equipment names<br>
             [Artisan Equipment Name] [Description, Recipe, Source (optional)]
         </div>
         <div id="bombs" class="help-subtitle nested">Bombs</div>
         <div class="help-command nested">
-            [Bombs] - Lists all bomb names<br>
-            [Bomb Name] [Description, Recipe, Source (optional)]
+            Bombs - Lists all bomb names<br>
+            [Bomb Name] [Description, Recipe, Radius, Source, Sell (optional)]
         </div>
-        <div id="consumables" class="help-subtitle nested">Consumables</div>
+        <!-- <div id="consumables" class="help-subtitle nested">Consumables</div>
         <div class="help-command nested">
             [Consumables] - Lists all bomb names<br>
             [Consumable Name] [Description, Recipe, Source (optional)]
-        </div>
+        </div> -->
         <div id="decor" class="help-subtitle nested">Decor</div>
         <div class="help-command nested">
-            [Decor] - Lists all bomb names<br>
+            Decor - Lists all decor names<br>
             [Decor Name] [Description, Recipe, Source (optional)]
         </div>
         <div id="edibles" class="help-subtitle nested">Edibles</div>
         <div class="help-command nested">
-            [Edible] - Lists all bomb names<br>
-            [Edible Name] [Description, Recipe, Source (optional)]
+            Edible - Lists all edible item names<br>
+            [Edible Name] [Description, Recipe, Energy, Health, Source (optional)]
         </div>
         <div id="fences" class="help-subtitle nested">Fences</div>
         <div class="help-command nested">
-            [Fences] - Lists all bomb names<br>
-            [Fence Name] [Description, Recipe, Source (optional)]
+            Fence - Lists all fence names<br>
+            [Fence Name] [Description, Life, Recipe, Source (optional)]
         </div>
         <div id="fertilizers" class="help-subtitle nested">Fertilizers</div>
         <div class="help-command nested">
-            [Fertilizers] - Lists all bomb names<br>
+            Fertilizer - Lists all fertilizer names<br>
             [Fertilizer Name] [Description, Recipe, Source (optional)]
         </div>
         <div id="fishing" class="help-subtitle nested">Fishing</div>
         <div class="help-command nested">
-            [Fishing] - Lists all bomb names<br>
+            Fishing - Lists all fishing item names<br>
             [Fishing Name] [Description, Recipe, Source (optional)]
         </div>
         <div id="furniture" class="help-subtitle nested">Furniture</div>
         <div class="help-command nested">
-            [Furniture] - Lists all bomb names<br>
+            Furniture - Lists all furniture names<br>
             [Furniture Name] [Description, Recipe, Source (optional)]
         </div>
         <div id="lighting" class="help-subtitle nested">Lighting</div>
         <div class="help-command nested">
-            [Lighting] - Lists all lighting items<br>
+            Lighting - Lists all lighting item names<br>
             [Lighting Name] [Description, Recipe, Source (optional)]
         </div>
         <div id="misc" class="help-subtitle nested">Misc</div>
         <div class="help-command nested">
-            [Misc] - Lists all misc items<br>
+            Misc - Lists all misc item names<br>
             [Misc Name] [Description, Recipe, Source (optional)]
         </div>
         <div id="refining-equipment" class="help-subtitle nested">Refining Equipment</div>
         <div class="help-command nested">
-            [Refining Equipment] - Lists all refining equipment<br>
+            Refining Equipment - Lists all refining equipment names<br>
             [Refining Equipment Name] [Description, Recipe, Source (optional)]
         </div>
         <div id="rings" class="help-subtitle nested">Rings</div>
         <div class="help-command nested">
-            [Ring] - Lists all rings<br>
+            Ring - Lists all ring names<br>
             [Ring Name] [Description, Recipe, Source (optional)]
         </div>
         <div id="seeds" class="help-subtitle nested">Seeds</div>
         <div class="help-command nested">
-            [Seed] - Lists all bomb names<br>
+            Seed - Lists all seed names<br>
             [Seed Name] [Description, Recipe, Source (optional)]
         </div>
         <div id="sprinklers" class="help-subtitle nested">Sprinklers</div>
         <div class="help-command nested">
-            [Sprinkler] - Lists all bomb names<br>
+            Sprinkler - Lists all sprinkler names<br>
             [Sprinkler Name] [Description, Recipe, Source (optional)]
         </div>
 
-    <div id="artisangoods" class="help-subtitle">Artisan Goods</div>
-    <div class="help-command">
-        [Artisan Goods] - Lists all bomb names<br>
-        [Artisan Good Name] [Recipe, Time, Sell, Equipment (optional)]
-    </div>
-    <div id="animalproducts" class="help-subtitle">Animal Products</div>
-    <div class="help-command">
-        [Animal Products] - Lists all bomb names<br>
-        [Artisan Good Name] [Recipe, Time, Sell, Equipment (optional)]
-    </div>
-    <div id="minerals" class="help-subtitle">Minerals</div>
-    <div class="help-command">
-        [Artisan Goods] - Lists all bomb names<br>
-        [Artisan Good Name] [Recipe, Time, Sell, Equipment (optional)]
-    </div>
-    <div id="recipe" class="help-subtitle">Recipes</div>
-    <div class="help-command">
-        [Artisan Goods] - Lists all bomb names<br>
-        [Artisan Good Name] [Recipe, Time, Sell, Equipment (optional)]
-    </div>
-
+    <button onclick="backToTop()" id="topBtn">Back to Top ↑</button> 
 </div>
+
+<script>
+    //Get the button:
+    mybutton = document.getElementById("topBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function backToTop() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    } 
+</script>

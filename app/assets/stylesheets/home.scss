@@ -3,6 +3,10 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 /***************** Help Page Styling ***************************/
+html {
+    scroll-behavior: smooth;
+}
+
 .help-container {
     margin: 30px 45px;
     font-family: 'IBM Plex Mono', monospace;
@@ -12,17 +16,23 @@
     font-size: 18px;
     color: #353C4A;
     text-align: center;
+    font-weight: 600;
 }
 
 .help-subtitle {
-    font-size: 16px;
+    font-size: 17px;
     color: #353C4A;
-    margin-top: 25px;
-    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.help-subtitle.nested {
+    margin-top: 20px;
 }
 
 .nested {
-    margin-left: 20px
+    margin-left: 20px;
 }
 
 .help-container ol {
@@ -35,7 +45,7 @@
 }
 
 .help-container li {
-    padding-bottom: 10px;
+    padding-bottom: 16px;
 }
 
 .help-table {
@@ -48,10 +58,47 @@
 
 .help-table td:nth-child(2) {
     color: #737B89;
-    padding-left: 15px;
+    padding-left: 25px;
 }
 
 .help-command {
     font-size: 14px;
     color: #353C4A;
+}
+
+.help-example {
+    color: #737B89;
+}
+
+#general, #contents {
+    margin-top: 0;
+}
+
+#seasons {
+    padding-bottom: 0;
+}
+
+#topBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 20px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #7E8DDC; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 12px; /* Some padding */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Increase font size */
+    font-family: 'IBM Plex Mono', monospace;
+}
+  
+#topBtn:hover {
+    background-color: rgb(106, 120, 189); /* Add a dark-grey background on hover */
+}
+
+#topBtn:active {
+    background-color:  rgb(112, 129, 212); /* Add a dark-grey background on hover */
 }

@@ -35,7 +35,7 @@ class Container extends React.Component {
     let maxTerms = 8;
     
     // Limiting number of terminals by screen size
-    /*if(window.matchMedia("(max-width: 850px)").matches) {
+    if(window.matchMedia("(max-width: 850px)").matches) {
       maxTerms = 1;
     }
     else if(window.matchMedia("(max-width: 1024px)").matches) {
@@ -43,7 +43,7 @@ class Container extends React.Component {
     }
     else if(window.matchMedia("(max-width: 1180px)").matches) {
       maxTerms = 6;
-    }*/
+    }
 
     if(this.state.numTerminals < maxTerms) {
       this.setState({
